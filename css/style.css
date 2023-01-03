@@ -1,0 +1,138 @@
+header {
+  background-image: url("../img/home/background-top-bar.jpg");
+  position: fixed;
+  width: 100%;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  margin: 0px;
+  text-align: center;
+}
+
+main {
+  padding-top: 214px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body
+{background-color: #FFFFFF;
+font-family: 'Inter', sans-serif;
+font-size: 18px; /* Sets the font size to 16px */
+font-weight: 400; /* Sets the font weight to regular */
+line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+color: #000000;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.78em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.94em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.39em;
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+}
+
+#logo {
+   max-width: 250px;
+   text-align: center;
+}
+
+a {
+  color: #D11D70;
+  text-decoration: none; /* No underlining */
+}
+
+a:visited { /* visited link */
+  color: #4210AA;
+}
+
+a:hover,
+a:focus {
+  color: #000000;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:active { /* selected link */
+  color: #4210AA;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #D11D70;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50px;
+  border-bottom: 0px solid #D11D70; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover, {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button:active {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 25px; }
+
+#hero{
+  background-image: url("../img/home/background-top-bar.jpg");
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+
+}
+
+nav {
+  display: inline-block;
+  width:100%
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+}

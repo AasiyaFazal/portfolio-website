@@ -3,29 +3,28 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>YOLO</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="yolo">
 
   <!-- Header Section -->
   <header>
-    <div>
-      <div>
-        <img src="img/about/background-top-bar-aboutme.jpg" alt="Top Bar Background">
-      </div>
+    <div class = "container">
+      <img id="logo" src="img/logo.svg" alt="Aasiya Fazal Logo">
+      <nav>
+        <ul class="navigation">
+          <!-- <li><a href="#">Home</a></li> -->
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-      <div>
-        <img src="img/logo.svg" alt="Aasiya Fazal Logo">
-        <nav>
-          <ul>
-            <!-- <li><a href="#">Home</a></li> -->
-            <li><a href="about.html">About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+      </nav>
     </div>
   </header>
 
@@ -45,8 +44,7 @@
               <source media="(max-width:480px)" srcset="img/yolo/intro-480.jpg">
               <source media="(max-width:767px)" srcset="img/yolo/intro-767.jpg">
               <source media="(max-width:1024px)" srcset="img/yolo/intro-1024.jpg">
-              <source media="(min-width:1024px)" srcset="img/yolo/intro-1920.jpg">
-              <img src="img/yolo/intro-480.jpg" alt="YOLO Device Mockup" style="width:auto;">
+              <img src="img/yolo/intro-1920.jpg" alt="YOLO Device Mockup">
             </picture>
             <!-- <img
               alt="YOLO Device Mockup"
@@ -88,11 +86,10 @@
         <div class="inner-section">
           <div class="container">
             <picture>
-              <source srcset="img/yolo/overview-480.jpg" media="(max-width:480px)">
-              <source srcset="img/yolo/overview-767.jpg" media="(max-width:767px)">
-              <source srcset="img/yolo/overview-1024.jpg" media="(max-width:1024px)">
-              <source srcset="img/yolo/overview-1920.jpg" media="(min-width:1920px)">
-              <img src="img/yolo/overview-480.jpg" alt="YOLO Overview">
+              <source media="(max-width:480px)" srcset="img/yolo/overview-480.jpg">
+              <source media="(max-width:767px)" srcset="img/yolo/overview-767.jpg">
+              <source media="(max-width:1024px)" srcset="img/yolo/overview-1024.jpg">
+              <img src="img/yolo/overview-1920.jpg" alt="YOLO Overview">
             </picture>
           </div>
         </div>
@@ -109,11 +106,10 @@
         <div class="inner-section">
           <div class="container">
             <picture>
-              <source srcset="img/yolo/480-user-flow.jpg" media="(max-width:480px)">
-              <source srcset="img/yolo/767-user-flow.jpg" media="(max-width:767px)">
-              <source srcset="img/yolo/1024-user-flow.jpg" media="(max-width:1024px)">
-              <source srcset="img/yolo/1920-user-flow.jpg" media="(min-width:1920px)">
-              <img src="img/yolo/480-user-flow.jpg" alt="YOLO User Flow">
+              <source media="(max-width:480px)" srcset="img/yolo/480-user-flow.jpg">
+              <source media="(max-width:767px)" srcset="img/yolo/767-user-flow.jpg">
+              <source media="(max-width:1024px)" srcset="img/yolo/1024-user-flow.jpg">
+              <img src="img/yolo/1920-user-flow.jpg" alt="YOLO User Flow">
             </picture>
           </div>
         </div>
@@ -131,7 +127,7 @@
 		       </div>
 	    </div>
 
-      <div class="inner-section">
+      <div class="inner-section-wireframes">
 		      <div class="container">
 			         <div class="row">
 				             <div class="column">
@@ -168,7 +164,7 @@
 
                      <div class="column">
                            <p>Experience Info (Mid Fidelity Final)</p>
-                           <img src="img/yolo/experience-mf-final">
+                           <img src="img/yolo/experience-mf-final.jpg">
                     </div>
               </div>
 
@@ -208,33 +204,30 @@
                        <div class="colour-palette">
                               <h2>Colour Palette</h2>
                               <picture>
-                                <source srcset="img/yolo/480-colour-palette.jpg" media="(max-width:480px)">
-                                <source srcset="img/yolo/767-colour-palette.jpg" media="(max-width:767px)">
-                                <source srcset="img/yolo/1024-colour-palette.jpg" media="(max-width:1024px)">
-                                <source srcset="img/yolo/1920-colour-palette.jpg" media="(min-width:1920px)">
-                                <img src="img/yolo/480-colour-palette.jpg" alt="YOLO Colour Palette">
+                                <source media="(max-width:480px)" srcset="img/yolo/480-colour-palette.jpg">
+                                <source media="(max-width:767px)" srcset="img/yolo/767-colour-palette.jpg">
+                                <source media="(max-width:1024px)" srcset="img/yolo/1024-colour-palette.jpg">
+                                <img src="img/yolo/1920-colour-palette.jpg" alt="YOLO Colour Palette">
                               </picture>
                        </div>
 
                        <div class="typography">
                               <h2>Typography</h2>
                               <picture>
-                                <source srcset="img/yolo/480-typography.jpg" media="(max-width:480px)">
-                                <source srcset="img/yolo/767-typography.jpg" media="(max-width:767px)">
-                                <source srcset="img/yolo/1024-typography.jpg" media="(max-width:1024px)">
-                                <source srcset="img/yolo/1920-typography.jpg" media="(min-width:1920px)">
-                                <img src="img/yolo/480-typography.jpg" alt="YOLO Typography">
+                                <source media="(max-width:480px)" srcset="img/yolo/480-typography.jpg">
+                                <source media="(max-width:767px)" srcset="img/yolo/767-typography.jpg">
+                                <source media="(max-width:1024px)" srcset="img/yolo/1024-typography.jpg">
+                                <img src="img/yolo/1920-typography.jpg" alt="YOLO Typography">
                               </picture>
                        </div>
 
                        <div class="ui-elements">
                              <<h2>UI Elements</h2>
                              <picture>
-                               <source srcset="img/yolo/480-ui-elements.jpg" media="(max-width:480px)">
-                               <source srcset="img/yolo/767-ui-elements.jpg" media="(max-width:767px)">
-                               <source srcset="img/yolo/1024-ui-elements.jpg" media="(max-width:1024px)">
-                               <source srcset="img/yolo/1920-ui-elements.jpg" media="(min-width:1920px)">
-                               <img src="img/yolo/480-ui-elements.jpg" alt="YOLO UI Elements">
+                               <source media="(max-width:480px)" srcset="img/yolo/480-ui-elements.jpg">
+                               <source media="(max-width:767px)" srcset="img/yolo/767-ui-elements.jpg">
+                               <source media="(max-width:1024px)" srcset="img/yolo/1024-ui-elements.jpg">
+                               <img src="img/yolo/1920-ui-elements.jpg" alt="YOLO UI Elements">
                              </picture>
                       </div>
              </div>
@@ -244,56 +237,60 @@
 
 
       <div class="final device mockups">
+
+        <div class="inner-section">
+            <div class="container">
+                 <h2>Final Device Mockups</h2>
+            </div>
+       </div>
+
         <div class="inner-section">
             <div class="container">
                        <div class="first-mockup">
                               <picture>
-                                <source srcset="img/yolo/yellow-mockup-480.jpg" media="(max-width:480px)">
-                                <source srcset="img/yolo/yellow-mockup-767.jpg" media="(max-width:767px)">
-                                <source srcset="img/yolo/yellow-mockup-1024.jpg" media="(max-width:1024px)">
-                                <source srcset="img/yolo/yellow-mockup-1920.jpg" media="(min-width:1920px)">
-                                <img src="img/yolo/yellow-mockup-480.jpg" alt="YOLO Yellow Mockup">
+                                <source media="(max-width:480px)" srcset="img/yolo/yellow-mockup-480.jpg">
+                                <source media="(max-width:767px)" srcset="img/yolo/yellow-mockup-767.jpg">
+                                <source media="(max-width:1024px)" srcset="img/yolo/yellow-mockup-1024.jpg">
+                                <img src="img/yolo/yellow-mockup-1920.jpg" alt="YOLO Yellow Mockup">
                               </picture>
                        </div>
 
                        <div class="second-mockup">
                               <picture>
-                                <source srcset="img/yolo/pink-mockup-480.jpg" media="(max-width:480px)">
-                                <source srcset="img/yolo/pink-mockup-767.jpg" media="(max-width:767px)">
-                                <source srcset="img/yolo/pink-mockup-1024.jpg" media="(max-width:1024px)">
-                                <source srcset="img/yolo/pink-mockup-1920.jpg" media="(min-width:1920px)">
-                                <img src="img/yolo/pink-mockup-480.jpg" alt="YOLO Pink Mockup">
+                                <source media="(max-width:480px)" srcset="img/yolo/pink-mockup-480.jpg">
+                                <source media="(max-width:767px)" srcset="img/yolo/pink-mockup-767.jpg">
+                                <source media="(max-width:1024px)" srcset="img/yolo/pink-mockup-1024.jpg">
+                                <img src="img/yolo/pink-mockup-1920.jpg" alt="YOLO Pink Mockup">
                               </picture>
                        </div>
               </div>
             </div>
           </div>
 
-    <div>
-      <p>By Aasiya Fazal</p>
-      <a href="" target="_blank">View full case study here</a>
-        <a href="https://www.behance.net/aasiyafazal" target="_blank">Behance</a>
+    <div class="center">
+      <a href="https://www.behance.net/gallery/155605473/YOLO" target="_blank" class="button">View full case study here</a>
     </div>
+
 
   </main>
 
   <!-- Footer -->
   <footer id="contact">
-    <div>
-      <div>
-      <img src="img/about/background-get-in-touch.jpg" alt="Get In Touch Background">
-      </div>
+    <div class="container">
+      <!-- <div>
+      <img src="img/home/background-get-in-touch.jpg" alt="Get In Touch Background">
+      </div> -->
 
       <h2>Get in Touch</h2>
       <p>If you have a project you would like advice or help on, please feel free to reach out.</p>
       <div>
-        <a href="mailto:aasiya.fazal@gmail.com">Email Me</a>
+        <a href="mailto:aasiya.fazal@gmail.com" class="button">Email Me</a>
       </div>
     </div>
 
       <!--Social Media Layout and Placeholders-->
       <div>
-        <a href="https://www.linkedin.com/in/aasiya-fazal-951470a2" target="_blank">
+        <a href="https://www.linkedin.com/in/aasiya-fazal-951470a2" target="_blank" class="social-media">
           <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_30_940)">
               <path d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" fill="#D11D70" />
@@ -310,7 +307,7 @@
             </defs>
           </svg>
         </a>
-        <a href="https://www.behance.net/aasiyafazal" target="_blank">
+        <a href="https://www.behance.net/aasiyafazal" target="_blank" class="social-media">
           <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_15_267)">
               <path d="M25.5 50C39.3071 50 50.5 38.8071 50.5 25C50.5 11.1929 39.3071 0 25.5 0C11.6929 0 0.5 11.1929 0.5 25C0.5 38.8071 11.6929 50 25.5 50Z" fill="#D11D70" />

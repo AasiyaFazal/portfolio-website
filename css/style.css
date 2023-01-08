@@ -1,30 +1,48 @@
 header {
-  background-image: url("../img/home/background-top-bar.jpg");
+  background-image: url("../img/about/background-1920.jpg");
+  background-size: cover;
   position: fixed;
   width: 100%;
   padding-top: 15px;
   padding-right: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
-  margin: 0px;
   text-align: center;
+  z-index: 9;
+}
+
+#logo{
+    margin: 20px auto;
+}
+
+.home header {
+  background-color: transparent;
+  background-image: none;
+  margin: 20px auto;
 }
 
 main {
-  padding-top: 214px;
+  padding-top: 224px;
+}
+
+.home main {
+  padding-top: 0px;
 }
 
 * {
   box-sizing: border-box;
 }
 
-body
-{background-color: #FFFFFF;
-font-family: 'Inter', sans-serif;
-font-size: 18px; /* Sets the font size to 16px */
-font-weight: 400; /* Sets the font weight to regular */
-line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-color: #000000;
+body {
+  background-color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 400;
+  /* Sets the font weight to regular */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #000000;
 }
 
 h1, h2, h3, h4 {
@@ -34,105 +52,272 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.78em;
   font-weight: 700;
+  text-align:center;
+  margin-top: 70px;
+}
+
+.home h1 {
+  margin-top: 40px;
 }
 
 h2 {
-  font-size: 1.94em;
-  font-weight: 700;
+  font-size: 1.6em;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 1.39em;
-  font-weight: 700;
+  font-weight: 600;
 }
+
+#hero h1 span {
+display: block;
+font-size: 70%;
+font-weight: 600;
+margin: 0px 5px
+/* margin-top: 0.1em; */
+
+}
+
 
 img {
   width: 100%;
 }
 
 #logo {
-   max-width: 250px;
-   text-align: center;
+  max-width: 250px;
+  text-align: center;
+}
+
+.tool {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  font-weight: 400;
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+  transition: 0.2s opacity;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.icons .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* .icons .flex .tool:last-of-type:after {
+  content: "";
+} */
+
+.center {
+  text-align: center;
 }
 
 a {
   color: #D11D70;
-  text-decoration: none; /* No underlining */
 }
 
-a:visited { /* visited link */
-  color: #4210AA;
+a:visited {
+  /* visited link */
+  color: #D11D70;
 }
 
 a:hover,
 a:focus {
-  color: #000000;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  color: #4210AA;
+  text-decoration: none;
+  /* No Underlining when hovering over a link */
 }
 
-a:active { /* selected link */
+a:active {
+  /* selected link */
   color: #4210AA;
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #D11D70;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
-  width: 300px;
   text-align: center;
-  padding: 10px;
+  padding: 10px 30px;
   border-radius: 50px;
-  border-bottom: 0px solid #D11D70; /* width of the border, type, color */
+  border-bottom: 0px solid #D11D70;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
+  margin: 20px 0 0;
+  text-decoration: none;
+  max-width: 80%;
 }
 
-.button:hover, {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+.button:visited {
+  color: #ffffff;
+}
+
+.button:hover, .button:focus {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
 .button:active {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+.social-media {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /* Layout styling */
 .container {
   padding: 0 15px;
 }
+
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
-#work .row { padding-bottom: 25px; }
-
-#hero{
-  background-image: url("../img/home/background-top-bar.jpg");
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
+#work .row {
+  padding-bottom: 25px;
 }
 
-#hero h1 {
-  text-align: center; /* Centers text */
+#hero {
+  background-image: url("../img/home/home-background-1920.jpg");
+  background-size: cover;
+  padding-top: 236px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#hero img {
+  opacity: 0.8;
+}
+
+#hero p {
+display: block;
+margin: 0px 10px
+/* margin-top: 0.1em; */
 
 }
+
+
 
 nav {
   display: inline-block;
-  width:100%
+  width: 100%;
+  margin: 10px auto;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
+  text-transform: uppercase;
 }
 
-nav > ul > li > a {
-  padding: 0 15px;
+nav>ul>li>a {
+  padding: 0 20px;
+}
+
+/* About Me page specific styling */
+
+.subskill:{
+  height: 150px;
+  width: 100%;
+  background-color: #F7C7DF;
+  text-align:center;
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
+
+}
+}
+
+.dsubskillset{
+  background-color: #F7C7DF;
+
+}
+
+.subskill:nth-child(3){
+  background-color: #FFEDF7;
+}
+
+.subskill:nth-child(4){
+  background-color: #F6E6F4;
+}
+
+.subskill:nth-child(5){
+  background-color: #E7CCF0;
+}
+
+.subskill:nth-child(6){
+  background-color: #DCB5D5;
+}
+
+.pmsubskillset{
+  background-color: #D8F2F7;
+}
+
+.subskill:nth-child(8){
+  background-color: #C4E5F9;
+}
+
+.subskill:nth-child(9){
+  background-color: #87CAF0;
+}
+
+.subskill:nth-child(10){
+  background-color: #2AA1E4;
+}
+
+.subskill .heading{
+  font-weight: 700;
+  font-size: 18px
+
+}
+
+
+/* YOLO page specific styling */
+
+.yolo .inner-section-wireframes p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.yolo .inner-section-wireframes .column p {
+  text-align:center;
+}
+
+.yolo .inner-section-wireframes .column img {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+footer {
+  background-image: url("../img/home/get-in-touch-background-1920.jpg");
+  width: 100%;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  font-family: 'Inter', sans-serif;
+  margin-top: 50px;
+  text-align: center;
 }

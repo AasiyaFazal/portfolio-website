@@ -3,29 +3,28 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Me</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <!-- Header Section -->
   <header>
-    <div>
-      <div>
-        <img src="img/about/background-top-bar-aboutme.jpg" alt="Top Bar Background">
-      </div>
+    <div class = "container">
+      <img id="logo" src="img/logo.svg" alt="Aasiya Fazal Logo">
+      <nav>
+        <ul class="navigation">
+          <!-- <li><a href="#">Home</a></li> -->
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-      <div>
-        <img src="img/logo.svg" alt="Aasiya Fazal Logo">
-        <nav>
-          <ul>
-            <!-- <li><a href="#">Home</a></li> -->
-            <li><a href="about.html">About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+      </nav>
     </div>
   </header>
 
@@ -39,9 +38,10 @@
 
           <div class="column">
             <picture>
-              <!-- for tablet -->
-              <source srcset="img/about/aasiya-formal-tablet-mob.jpg" media="(max-width:1024px)">
-              <img src="img/about/aasiyaformal2x.jpg" alt="Aasiya Formal Photo">
+              <source media="(max-width:480px)" srcset="img/about/aasiya-formal-480.jpg">
+              <source media="(max-width:767px)" srcset="img/about/aasiya-formal-767.jpg">
+              <source media="(max-width:1024px)" srcset="img/about/aasiya-formal-1024.jpg">
+              <img src="img/about/aasiya-formal-1920.jpg" alt="Aasiya Formal Photo">
             </picture>
           </div>
 
@@ -55,44 +55,20 @@
             <p>I had the determination and resilience to see my UI / UX course through whilst working at one of the most pressurised times in the NHS during COVID and whilst pursuing a leadership postgraduate diploma in parallel. Therefore, I am
               confident that I can learn at a fast pace and thrive in this field.</p>
             <p>With my previous professional experience spanning across data analytics, technology consulting, operational management, service design and project management, I have a versatile skillset to complement my design skills.</p>
-            <a href="files/cv.pdf" target="_blank">Download My Resume</a>
+            <div class="center">
+              <a href="files/cv.pdf" target="_blank" class="button">Download My Resume</a>
+            </div>
           </div>
 
         </div>
       </div>
     </div>
 
-    <div class="section">
+
+    <div class="section icons">
       <div class="container">
-        <div class="row">
-          <h2>My Hobbies & Interests</h2>
-          <div class="column">
-              <picture>
-                <source srcset="img/about/aasiya-informal-tablet-mob.jpg" media="(max-width:1024px)">
-                <img src="img/about/aasiyainformal2x.jpg" alt="Aasiya Formal Photo">
-              </picture>
-          </div>
-
-          <div class="column">
-            <p>I love the feeling of discovering a new place, experiencing its culture and more importantly its cuisine, as I am a big foodie! Apart from travel and food, my hobbies and interests include: </p>
-            <ol>
-              <li>Watching live sporting events (I love tennis and gymnastics)</li>
-              <li>Zumba</li>
-              <li>Power walking to coffee places (yes it counts as a sport!)</li>
-              <li>Watching TV (I am a firm believer that this is not a waste of time!) </li>
-              <li>Listening to Podcasts (a newfound interest from getting hooked on The Trojan Horse Affair and Business Wars)</li>
-            </ol>
-            <a href="files/cv.pdf" target="_blank">Download My Resume</a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <h3>Some Tools I Use</h3>
+        <h3>Some Tools I Use</h3>
+        <div class="row flex" >
 
           <div class="tool">
             <img src="img/about/figma.svg" alt="Figma Logo">
@@ -135,7 +111,7 @@
           </div>
 
           <div class="tool">
-            img src="img/about/jira.svg" alt="Jira Logo">
+            <img src="img/about/jira.svg" alt="Jira Logo">
             <p>JIRA</p>
           </div>
 
@@ -185,10 +161,10 @@
       </div>
     </div>
 
-    <div class="column">
+    <div class="column skillset">
       <h2>Skills</h2>
 
-      <div class="subskillset">
+      <div class="dsubskillset">
         <h3>Design</h3>
       </div>
 
@@ -204,8 +180,7 @@
         <p>User Personas<br>
           User Stories<br>
           User Goals<br>
-          Jobs To Be Done<br>
-          User Interviews and Surveys</p>
+          Jobs To Be Done</p>
       </div>
 
       <div class="subskill">
@@ -225,7 +200,7 @@
         User Testing</p>
       </div>
 
-      <div class="subskillset">
+      <div class="pmsubskillset">
         <h3>Project Management</h3>
       </div>
 
@@ -252,25 +227,53 @@
       </div>
     </div>
 
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <h2>My Hobbies & Interests</h2>
+          <div class="column">
+            <picture>
+              <source media="(max-width:480px)" srcset="img/about/aasiya-informal-480.jpg">
+              <source media="(max-width:767px)" srcset="img/about/aasiya-informal-767.jpg">
+              <source media="(max-width:1024px)" srcset="img/about/aasiya-informal-1024.jpg">
+              <img src="img/about/aasiya-informal-1920.jpg" alt="Aasiya Informal Photo">
+            </picture>
+          </div>
+
+          <div class="column">
+            <p>I love the feeling of discovering a new place, experiencing its culture and more importantly its cuisine, as I am a big foodie! Apart from travel and food, my hobbies and interests include: </p>
+            <ol>
+              <li>Watching live sporting events (I love tennis and gymnastics)</li>
+              <li>Zumba</li>
+              <li>Power walking to coffee places (yes it counts as a sport!)</li>
+              <li>Watching TV (I am a firm believer that this is not a waste of time!) </li>
+              <li>Listening to Podcasts (a newfound interest from getting hooked on The Trojan Horse Affair and Business Wars)</li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
   </main>
 
   <!-- Footer -->
   <footer id="contact">
-    <div>
-      <div>
+    <div class="container">
+      <!-- <div>
       <img src="img/home/background-get-in-touch.jpg" alt="Get In Touch Background">
-      </div>
+      </div> -->
 
       <h2>Get in Touch</h2>
       <p>If you have a project you would like advice or help on, please feel free to reach out.</p>
-      <div>
-        <a href="mailto:aasiya.fazal@gmail.com">Email Me</a>
+      <div class="center">
+        <a href="mailto:aasiya.fazal@gmail.com" class="button">Email Me</a>
       </div>
     </div>
 
       <!--Social Media Layout and Placeholders-->
       <div>
-        <a href="https://www.linkedin.com/in/aasiya-fazal-951470a2" target="_blank">
+        <a href="https://www.linkedin.com/in/aasiya-fazal-951470a2" target="_blank" class="social-media">
           <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_30_940)">
               <path d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" fill="#D11D70" />
@@ -287,7 +290,7 @@
             </defs>
           </svg>
         </a>
-        <a href="https://www.behance.net/aasiyafazal" target="_blank">
+        <a href="https://www.behance.net/aasiyafazal" target="_blank" class="social-media">
           <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_15_267)">
               <path d="M25.5 50C39.3071 50 50.5 38.8071 50.5 25C50.5 11.1929 39.3071 0 25.5 0C11.6929 0 0.5 11.1929 0.5 25C0.5 38.8071 11.6929 50 25.5 50Z" fill="#D11D70" />

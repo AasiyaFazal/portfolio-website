@@ -7,10 +7,10 @@
   <title>Aasiya Fazal (UX/UI Designer)</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href= "https://fonts.googleapis.com/css2?family=Inter"
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="home">
 
   <!-- Header Section -->
   <header>
@@ -36,7 +36,7 @@
       <div class="container">
         <h1>Hi, I am Aasiya,
           <span> an aspiring UI / UX Designer, with a background in the Health sector.</span>
-        <h1/>
+        </h1>
         <p>I am passionate about the unlimited potential of technology to transform industries and the key role of design in achieving this through creating accessible, fun and intuitive experiences for people.</p>
       </div>
     </div>
@@ -52,20 +52,23 @@
     <div id="projects">
       <div class="container">
         <h2>Recent Work</h2>
-        <a href="#">See All Work</a>
 
         <div class="container"> <!-- added div here -->
           <!-- Project 1: YOLO -->
           <div class="column">
             <div class="row">
-                <img src="img/home/yolo/yolo@2.jpg" alt="YOLO Mockup">
+              <picture>
+                <source media="(max-width:480px)" srcset="img/home/yolo/yolo-1024-480.jpg">
+                <source media="(max-width:767px)" srcset="img/home/yolo/yolo-767.jpg">
+                <source media="(max-width:1024px)" srcset="img/home/yolo/yolo-1024-480.jpg">
+                <img src="img/home/yolo/yolo-1920.jpg" alt="YOLO Cover Photo">
+              </picture>
             </div>
 
             <div class="row">
               <h3><a href="yolo.html">YOLO</a></h3>
               <p>This is an app which is all about empowering anybody and everybody to live and breath the motto “You Only Live Once!”. The app removes the “why can’t I?” and 101 reasons which get in the way of taking the plunge to try out a new
                 experience, through providing a fun, easy and seamless online interface for users to buy once in a lifetime experiences.</p>
-              <a href="#">View More</a>
             </div>
           </div>
 
@@ -73,32 +76,44 @@
           <!-- Project 2: WEllnUS -->
           <div class="column">
             <div class="row">
-              <img src="img/home/wellnus/wellnus@2.jpg" alt="WellnUS Mockup">
-            </div>
+              <picture>
+                <source media="(max-width:480px)" srcset="img/home/wellnus/wellnus-1024-480.jpg">
+                <source media="(max-width:767px)" srcset="img/home/wellnus/wellnus-767.jpg">
+                <source media="(max-width:1024px)" srcset="img/home/wellnus/wellnus-1024-480.jpg">
+                <img src="img/wellnus/wellnus-1920.jpg" alt="WEllnUS Cover Photo">
+              </picture>
+             </div>
 
             <div class="row">
-              <h3>WEllnUS</h3>
+              <h3><a href="wellnus.html">WEllnUS</a></h3>
               <p>WEllnUS is an app which aims for people to feel empowered and not alone in achieving their health and wellbeing goals through:</p>
               <ol>
                 <li>Making it easier to plan and cook healthy, balanced meals at home.</li>
                 <li>Helping to connect individuals with similar life circumstances and goals so they can exchange helpful tips and support.</li>
               </ol>
-              <a href="#">View More</a>
             </div>
           </div>
 
           <!-- Project 3: Restaurenturer -->
           <div class = "column">
             <div class="row">
-              <img src="img/home/restaurenturer/restaurenturer@2.jpg" alt="Restaurenturer Mockup">
+              <picture>
+                <source media="(max-width:480px)" srcset="img/home/restaurenturer/restaurenturer-1024-480.jpg">
+                <source media="(max-width:767px)" srcset="img/home/restaurenturer/restaurenturer-767.jpg">
+                <source media="(max-width:1024px)" srcset="img/home/restaurenturer/restaurenturer-1024-480.jpg">
+                <img src="img/restaurenturer/restaurenturer-1920.jpg" alt="Restaurenturer Cover Photo">
+              </picture>
             </div>
 
             <div class="row">
-              <h3>Restaurenturer</h3>
+              <h3><a href="restaurenturer.html">Restaurenturer</a></h3>
               <p>This app aims to make it effortless and seamless for users to find unique food and drink experiences wherever they are in the world. As a self professed foodie, I really enjoyed this project, as the best part of visiting any place in
                 the world for me is unique, authentic food with a memorable ambience.</p>
-              <a href="#">View More</a>
             </div>
+          </div>
+
+          <div class="center">
+            <a href="work.html" class="button">See All Work</a>
           </div>
 
         </div>
@@ -111,20 +126,20 @@
   <!-- Footer -->
   <footer id="contact">
     <div class="container">
-      <div>
+      <!-- <div>
       <img src="img/home/background-get-in-touch.jpg" alt="Get In Touch Background">
-      </div>
+      </div> -->
 
       <h2>Get in Touch</h2>
       <p>If you have a project you would like advice or help on, please feel free to reach out.</p>
-      <div>
+      <div class="center">
         <a href="mailto:aasiya.fazal@gmail.com" class="button">Email Me</a>
       </div>
     </div>
 
       <!--Social Media Layout and Placeholders-->
       <div>
-        <a href="https://www.linkedin.com/in/aasiya-fazal-951470a2" target="_blank">
+        <a href="https://www.linkedin.com/in/aasiya-fazal-951470a2" target="_blank" class="social-media">
           <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_30_940)">
               <path d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" fill="#D11D70" />
@@ -141,7 +156,7 @@
             </defs>
           </svg>
         </a>
-        <a href="https://www.behance.net/aasiyafazal" target="_blank">
+        <a href="https://www.behance.net/aasiyafazal" target="_blank" class="social-media">
           <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_15_267)">
               <path d="M25.5 50C39.3071 50 50.5 38.8071 50.5 25C50.5 11.1929 39.3071 0 25.5 0C11.6929 0 0.5 11.1929 0.5 25C0.5 38.8071 11.6929 50 25.5 50Z" fill="#D11D70" />

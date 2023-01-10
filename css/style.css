@@ -4,29 +4,16 @@ header {
   position: fixed;
   width: 100%;
   padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
   text-align: center;
   z-index: 9;
 }
 
-#logo{
-    margin: 20px auto;
-}
-
-.home header {
-  background-color: transparent;
-  background-image: none;
-  margin: 20px auto;
+.container {
+  padding: 0 16px;
 }
 
 main {
-  padding-top: 224px;
-}
-
-.home main {
-  padding-top: 0px;
+  padding-top: 143px;
 }
 
 * {
@@ -50,78 +37,57 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.78em;
+  font-size: 2.0em;
   font-weight: 700;
-  text-align:center;
-  margin-top: 70px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .home h1 {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: 600;
+  margin: 0;
 }
 
 h3 {
   font-size: 1.39em;
   font-weight: 600;
+  margin: 0px;
+  padding: 10px 0;
 }
 
-#hero h1 span {
-display: block;
-font-size: 70%;
-font-weight: 600;
-margin: 0px 5px
-/* margin-top: 0.1em; */
-
+h4 {
+  margin: 0;
+  padding: 10px 0;
 }
 
-
-img {
-  width: 100%;
-}
-
-#logo {
-  max-width: 250px;
-  text-align: center;
-}
-
-.tool {
-  display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  font-weight: 400;
-  width: 30%;
-  text-align: center;
-  padding: 10px;
-  transition: 0.2s opacity;
-  margin-top: 20px;
+ol {
   margin-bottom: 0px;
 }
 
-.icons .flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+#logo {
+  max-width: 100px;
+  text-align: center;
 }
-
-/* .icons .flex .tool:last-of-type:after {
-  content: "";
-} */
 
 .center {
   text-align: center;
 }
 
 a {
-  color: #D11D70;
+  color: #9B9785;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 a:visited {
   /* visited link */
-  color: #D11D70;
+  color: #9B9785;
+  text-decoration: none;
 }
 
 a:hover,
@@ -142,16 +108,16 @@ a:active {
   background-color: #D11D70;
   color: #ffffff;
   /* needed to override the default link color */
-  font-weight: 400;
-  text-align: center;
-  padding: 10px 30px;
+  font-weight: 500;
+  font-size: 14px;
+  /* text-align: center; */
+  padding: 10px 50px;
+  margin: 10px 0px;
   border-radius: 50px;
-  border-bottom: 0px solid #D11D70;
   /* width of the border, type, color */
-  transition: 0.2s opacity;
-  margin: 20px 0 0;
+  /* transition: 0.2s opacity; */
   text-decoration: none;
-  max-width: 80%;
+  max-width: 250px;
 }
 
 .button:visited {
@@ -170,53 +136,10 @@ a:active {
   text-decoration: none;
 }
 
-.social-media {
-  display: inline-block;
-  margin-top: 30px;
-  margin-bottom: 0px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-/* Layout styling */
-.container {
-  padding: 0 15px;
-}
-
-.row {
-  margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
-}
-
-#work .row {
-  padding-bottom: 25px;
-}
-
-#hero {
-  background-image: url("../img/home/home-background-1920.jpg");
-  background-size: cover;
-  padding-top: 236px;
-  padding-bottom: 30px;
-  text-align: center;
-}
-
-#hero img {
-  opacity: 0.8;
-}
-
-#hero p {
-display: block;
-margin: 0px 10px
-/* margin-top: 0.1em; */
-
-}
-
-
-
 nav {
   display: inline-block;
   width: 100%;
-  margin: 10px auto;
+  margin: 0;
 }
 
 nav>ul {
@@ -230,68 +153,193 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding: 0 20px;
+  padding: 0 15px;
+}
+
+img {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* Homepage specific styling */
+.home header {
+  background-color: transparent;
+  background-image: none;
+}
+
+.home main {
+  padding-top: 0px;
+}
+
+#hero {
+  background-image: url("../img/home/home-background-1920.jpg");
+  background-size: cover;
+  padding-top: 143px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#hero img {
+  opacity: 0.8;
+}
+
+#hero p {
+  display: block;
+  margin: 0px 10px
+}
+
+#hero h1 span {
+  display: block;
+  font-size: 70%;
+  font-weight: 600;
+  margin: 0px 5px;
+}
+
+.seeallworkbutton {
+  margin-top: -10px;
+  padding-bottom: 20px;
+}
+
+.center .button {
+  margin-bottom: 20px;
 }
 
 /* About Me page specific styling */
+.pictureandimage .row {
+  margin-left: -16px;
+  margin-right: -16px;
+}
 
-.subskill:{
-  height: 150px;
-  width: 100%;
-  background-color: #F7C7DF;
-  text-align:center;
-  font-weight: 400;
+.pictureandimage .column:last-child {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+/* .about p {
+  margin-left: 3%;
+  margin-right: 3%;
+} */
+.tool {
   display: inline-block;
-  width: 100%;
-
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  font-weight: 400;
+  font-size: 12px;
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+  transition: 0.2s opacity;
+  /* margin-top: 20px; */
+  margin-bottom: 0px;
 }
+
+.tool .empty {
+  visibility: hidden;
 }
 
-.dsubskillset{
+.icons .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skillset {
+  display: flex;
+  flex-direction: column;
+}
+
+.subskill {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dsubskillset {
   background-color: #F7C7DF;
-
+  text-align: center;
+  padding: 0;
 }
 
-.subskill:nth-child(3){
+.subskill:nth-child(3) {
   background-color: #FFEDF7;
 }
 
-.subskill:nth-child(4){
+.subskill:nth-child(4) {
   background-color: #F6E6F4;
 }
 
-.subskill:nth-child(5){
+.subskill:nth-child(5) {
   background-color: #E7CCF0;
 }
 
-.subskill:nth-child(6){
+.subskill:nth-child(6) {
   background-color: #DCB5D5;
 }
 
-.pmsubskillset{
+.pmsubskillset {
   background-color: #D8F2F7;
+  text-align: center;
+  padding: 0;
 }
 
-.subskill:nth-child(8){
+.subskill:nth-child(8) {
   background-color: #C4E5F9;
 }
 
-.subskill:nth-child(9){
+.subskill:nth-child(9) {
   background-color: #87CAF0;
 }
 
-.subskill:nth-child(10){
+.subskill:nth-child(10) {
   background-color: #2AA1E4;
 }
 
-.subskill .heading{
+.subskill .heading {
   font-weight: 700;
-  font-size: 18px
-
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
+.subskill p {
+  text-align: center;
+}
+
+.skills {
+  margin-bottom: 40px;
+}
+
+/* Projects specific styling */
+.project p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.project {
+  padding-bottom: 30px;
+}
+
+.project a {
+  color: #D11D70;
+}
 
 /* YOLO page specific styling */
+.yolo h4 {
+  text-align: center;
+}
 
 .yolo .inner-section-wireframes p {
   font-size: 18px;
@@ -299,7 +347,7 @@ nav>ul>li>a {
 }
 
 .yolo .inner-section-wireframes .column p {
-  text-align:center;
+  text-align: center;
 }
 
 .yolo .inner-section-wireframes .column img {
@@ -309,15 +357,108 @@ nav>ul>li>a {
   margin-right: auto;
 }
 
+.yolo .inner-section h2 {
+  background-color: #230407;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Bungee';
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 20px;
+  text-transform: uppercase;
+  margin: 20px 0px;
+}
+
+.inner-section-mockups {
+  padding-bottom: 0px;
+}
+
+.yolo p {
+  text-align: center;
+  font-size: 13px;
+}
+
+.yolo .overview-paragraph {
+  background-image: url("../img/yolo/overview-background-480.jpg");
+  background-size: cover;
+  padding-bottom: 200px;
+  opacity: 0.8;
+}
+
+.yolo .overview-paragraph p {
+  background-size: cover;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.colour {
+  text-align: center;
+  padding: 20px 0px;
+  margin: 20px 0px;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  color: #FFFFFF;
+  width: 120px;
+  height: 120px;
+}
+
+.colour:nth-child(2) {
+  background-color: #45B6FE;
+}
+
+.colour:nth-child(3) {
+  background-color: #84CC34;
+}
+
+.colour:nth-child(4) {
+  background-color: #FF3391;
+}
+
+.colour:nth-child(5) {
+  background-color: #36008D;
+}
+
+.colour:nth-child(6) {
+  background-color: #1E630C;
+}
+
+.colour:nth-child(7) {
+  background-color: #F8E646;
+  color: #111111;
+}
+
+/* Footer specific styling */
+.social-media {
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
 footer {
   background-image: url("../img/home/get-in-touch-background-1920.jpg");
   width: 100%;
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  font-family: 'Inter', sans-serif;
-  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 0px;
   text-align: center;
+  margin-top: 0px;
+}
+
+#contact h2 {
+  padding: 10px 0px;
+}
+
+#contact p {
+  padding: 10px 0px;
+  margin: 0px
 }

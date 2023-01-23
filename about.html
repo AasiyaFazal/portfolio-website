@@ -17,11 +17,13 @@
   <!-- Header Section -->
   <header>
     <div class="container">
-      <img id="logo" src="img/logo.svg" alt="Aasiya Fazal Logo">
+      <a href="home.html">
+        <img id="logo" src="img/logo.svg" alt="Aasiya Fazal Logo">
+      </a>
       <nav>
         <ul class="navigation">
           <!-- <li><a href="#">Home</a></li> -->
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html" class="active border-left">About</a></li>
           <li><a href="work.html">Work</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -39,38 +41,115 @@
 
           <div class="section pictureandimage">
             <div class="container">
-              <h1>My Story</h1>
+              <div class="story">
+                <h1>My Story</h1>
 
-              <div class="row">
+                <div class="row-about">
 
+                  <div class="column-about">
+                    <picture>
+                      <source media="(max-width:480px)" srcset="img/about/aasiya-formal-480.jpg">
+                      <source media="(max-width:1023px)" srcset="img/about/aasiya-formal-767.jpg">
+                      <source media="(max-width:1200px)" srcset="img/about/aasiya-formal-1024.jpg">
+                      <img src="img/about/aasiya-formal-1920.jpg" alt="Aasiya Formal Photo">
+                    </picture>
+                  </div>
 
-                <div class="column">
-                  <picture>
-                    <source media="(max-width:480px)" srcset="img/about/aasiya-formal-480.jpg">
-                    <source media="(max-width:767px)" srcset="img/about/aasiya-formal-767.jpg">
-                    <source media="(max-width:1024px)" srcset="img/about/aasiya-formal-1024.jpg">
-                    <img src="img/about/aasiya-formal-1920.jpg" alt="Aasiya Formal Photo">
-                  </picture>
-                </div>
-
-
-
-                <div class="column">
-                  <p>Hi, I am Aasiya, an aspiring UI/UX designer and I hope to be able to create memorable, fun, effortless experiences for people whilst making the most of my life, travelling the world.</p>
-                  <p>My interest in UI/UX was fuelled by my first insight during an internship at Cancer Research UK. At the time, I had already committed to a job in the NHS starting straight after this internship, but I didn’t want to close the
-                    door on a
-                    UI/UX career, therefore, I embarked on a part time course at CareerFoundry. Fast forward to today and I have a portfolio of projects I am proud of and the certainty that a career in the UI/UX field is what I want to pursue, having
-                    left
-                    my career in the NHS in May 2022.</p>
-                  <p>I had the determination and resilience to see my UI / UX course through whilst working at one of the most pressurised times in the NHS during COVID and whilst pursuing a leadership postgraduate diploma in parallel. Therefore, I
-                    am
-                    confident that I can learn at a fast pace and thrive in this field.</p>
-                  <p>With my previous professional experience spanning across data analytics, technology consulting, operational management, service design and project management, I have a versatile skillset to complement my design skills.</p>
-                  <div class="center">
-                    <a href="files/cv.pdf" target="_blank" class="button">Download My Resume</a>
+                  <div class="column-about-text">
+                    <p>Hi, I am Aasiya, an aspiring UI/UX designer and I hope to be able to create memorable, fun, effortless experiences for people whilst making the most of my life, travelling the world.</p>
+                    <p>My interest in UI/UX was fuelled by my first insight during an internship at Cancer Research UK. At the time, I had already committed to a job in the NHS starting straight after this internship, but I didn’t want to close the
+                      door on a
+                      UI/UX career, therefore, I embarked on a part time course at CareerFoundry. Fast forward to today and I have a portfolio of projects I am proud of and the certainty that a career in the UI/UX field is what I want to pursue,
+                      having
+                      left
+                      my career in the NHS in May 2022.</p>
+                    <p>I had the determination and resilience to see my UI / UX course through whilst working at one of the most pressurised times in the NHS during COVID and whilst pursuing a leadership postgraduate diploma in parallel. Therefore, I
+                      am
+                      confident that I can learn at a fast pace and thrive in this field.</p>
+                    <p>With my previous professional experience spanning across data analytics, technology consulting, operational management, service design and project management, I have a versatile skillset to complement my design skills.</p>
+                    <div class="center cv">
+                      <a href="files/cv.pdf" target="_blank" class="button">Download My Resume</a>
+                    </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="column skills">
+
+            <div class="section skillset">
+              <h2>Skills</h2>
+
+              <div class="dsubskillset">
+                <h3>Design</h3>
+              </div>
+
+              <div class="row design-row">
+
+                <div class="subskill col-md-6">
+                  <p class="heading">Research</p>
+                  <p>User Interviews and Surveys<br>
+                    Secondary User Research<br>
+                    Competitor Analysis</p>
+                </div>
+
+                <div class="subskill col-md-6">
+                  <p class="heading">Define</p>
+                  <p>User Personas<br>
+                    User Stories<br>
+                    User Goals<br>
+                    Jobs To Be Done</p>
+                </div>
+
+                <div class="subskill col-md-6">
+                  <p class="heading">Ideate</p>
+                  <p>User Journey Mapping<br>
+                    Process Flow Mapping<br>
+                    Workshop Facilitation<br>
+                    Sketching</p>
+                </div>
+
+                <div class="subskill col-md-6">
+                  <p class="heading">Prototyping and Testing</p>
+                  <p>Mid Fidelity Wireframes<br>
+                    Style Guides<br>
+                    High Fidelity Wireframes<br>
+                    Interactive Prototyping<br>
+                    User Testing</p>
+                </div>
+              </div>
+
+              <div class="section skillset pmsubskillset">
+                <h3>Project Management</h3>
+              </div>
+
+              <div class="row pm-row">
+
+                <div class="subskill col-md-6-v2">
+                  <p class="heading">Initiation</p>
+                  <p>Stakeholder Mapping<br>
+                    Project Objectives<br>
+                    Project Charters<br>
+                    Business Cases</p>
+                </div>
+
+                <div class="subskill col-md-6-v2">
+                  <p class="heading">Planning</p>
+                  <p>Scope Definition<br>
+                    RACI Matrix<br>
+                    Project Plan<br>
+                    Risk Identification<br>
+                    Budget Setting<br>
+                  </p>
+                </div>
+
+                <div class="subskill col-md-6-v2">
+                  <p class="heading">Execution</p>
+                  <p>Project Progress Tracking<br>
+                    Risk Management<br>
+                    Issues Resolution</p>
+                </div>
               </div>
             </div>
           </div>
@@ -131,7 +210,7 @@
                   <p>GITHUB</p>
                 </div>
 
-                <div class="tool">
+                <div class="tool lucid">
                   <img src="img/about/lucidchart.svg" alt="Lucidchart Logo">
                   <p>LUCIDCHART</p>
                 </div>
@@ -145,10 +224,10 @@
 
 
 
-          <div class="section">
+          <div class="section icons">
             <div class="container">
-              <div class="row">
-                <h2>Technical Skills</h2>
+              <h2>Technical Skills</h2>
+              <div class="row flex">
 
                 <div class="tool">
                   <img src="img/about/html.svg" alt="HTML Logo">
@@ -175,6 +254,9 @@
                   <p>JAVA</p>
                 </div>
 
+                <div class="tool empty">
+                </div>
+
 
               </div>
             </div>
@@ -182,113 +264,42 @@
 
           <div class="section pictureandimage">
             <div class="container">
-              <div class="row">
+              <div class="hobbies">
                 <h2>My Hobbies & Interests</h2>
-                <div class="column">
-                  <picture>
-                    <source media="(max-width:480px)" srcset="img/about/aasiya-informal-480.jpg">
-                    <source media="(max-width:767px)" srcset="img/about/aasiya-informal-767.jpg">
-                    <source media="(max-width:1024px)" srcset="img/about/aasiya-informal-1024.jpg">
-                    <img src="img/about/aasiya-informal-1920.jpg" alt="Aasiya Informal Photo">
-                  </picture>
-                </div>
+                <div class="row-about">
+                  <div class="column-about informal">
+                    <picture>
+                      <source media="(max-width:480px)" srcset="img/about/aasiya-informal-480.jpg">
+                      <source media="(max-width:1023px)" srcset="img/about/aasiya-informal-767.jpg">
+                      <source media="(max-width:1200px)" srcset="img/about/aasiya-informal-1024.jpg">
+                      <img src="img/about/aasiya-informal-1920.jpg" alt="Aasiya Informal Photo">
+                    </picture>
+                  </div>
 
-                <div class="column">
-                  <p>I love the feeling of discovering a new place, experiencing its culture and more importantly its cuisine, as I am a big foodie! Apart from travel and food, my hobbies and interests include: </p>
-                  <ol>
-                    <li>Watching live sporting events (I love tennis and gymnastics)</li>
-                    <li>Zumba</li>
-                    <li>Power walking to coffee places (yes it counts as a sport!)</li>
-                    <li>Watching TV (I am a firm believer that this is not a waste of time!) </li>
-                    <li>Listening to Podcasts (a newfound interest from getting hooked on The Trojan Horse Affair and Business Wars)</li>
-                  </ol>
+                  <div class="column-about-text">
+                    <p>I love the feeling of discovering a new place, experiencing its culture and more importantly its cuisine, as I am a big foodie! Apart from travel and food, my hobbies and interests include: </p>
+                    <ol>
+                      <li>Watching live sporting events (I love tennis and gymnastics)</li>
+                      <li>Zumba</li>
+                      <li>Power walking to coffee places (yes it counts as a sport!)</li>
+                      <li>Watching TV (I am a firm believer that this is not a waste of time!) </li>
+                      <li>Listening to Podcasts (a newfound interest from getting hooked on The Trojan Horse Affair and Business Wars)</li>
+                    </ol>
+                  </div>
                 </div>
-
               </div>
             </div>
           </div>
         </div>
 
-        <div class="column skills">
 
-          <div class="section skillset">
-            <h2>Skills</h2>
-
-            <div class="dsubskillset">
-              <h3>Design</h3>
-            </div>
-
-            <div class="subskill">
-              <p class="heading">Research</p>
-              <p>User Interviews and Surveys<br>
-                Secondary User Research<br>
-                Competitor Analysis</p>
-            </div>
-
-            <div class="subskill">
-              <p class="heading">Define</p>
-              <p>User Personas<br>
-                User Stories<br>
-                User Goals<br>
-                Jobs To Be Done</p>
-            </div>
-
-            <div class="subskill">
-              <p class="heading">Ideate</p>
-              <p>User Journey Mapping<br>
-                Process Flow Mapping<br>
-                Workshop Facilitation<br>
-                Sketching</p>
-            </div>
-
-            <div class="subskill">
-              <p class="heading">Prototyping and Testing</p>
-              <p>Mid Fidelity Wireframes<br>
-                Layout, Typography and Style Guides<br>
-                High Fidelity Wireframes<br>
-                Interactive Prototyping<br>
-                User Testing</p>
-            </div>
-
-            <div class="section skillset pmsubskillset">
-              <h3>Project Management</h3>
-            </div>
-
-            <div class="subskill">
-              <p class="heading">Initiation</p>
-              <p>Stakeholder Mapping<br>
-                Project Objectives<br>
-                Project Charters<br>
-                Business Cases</p>
-            </div>
-
-            <div class="subskill">
-              <p class="heading">Planning</p>
-              <p>Scope Definition<br>
-                RACI Matrix<br>
-                Project Plan<br>
-                Risk Identification<br>
-                Budget Setting<br>
-              </p>
-            </div>
-
-            <div class="subskill">
-              <p class="heading">Execution</p>
-              <p>Project Progress Tracking<br>
-                Risk Management
-                Issues Resolution</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-
-
 
   </main>
 
   <!-- Footer -->
-  <footer id="contact">
+  <footer class="container" id="contact">
     <div class="container">
       <!-- <div>
       <img src="img/home/background-get-in-touch.jpg" alt="Get In Touch Background">

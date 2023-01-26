@@ -1,1 +1,5 @@
-console.log("Welcome to my portfolio site!");
+function menuToggle() {
+  var checkbox = document.getElementById('checkBox');
+  checkbox.checked = null;
+
+}

@@ -10,26 +10,47 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1e68e0300d.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="work">
 
   <!-- Header Section -->
   <header>
-    <div class="container">
-      <a href="home.html">
-        <img id="logo" src="img/logo.svg" alt="Aasiya Fazal Logo">
-      </a>
-      <nav>
-        <ul class="navigation">
-          <!-- <li><a href="#">Home</a></li> -->
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html" class="active">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-
-      </nav>
+    <div class="desktop-navbar">
+      <div class="nav-container">
+        <a href="home.html"><img id="logo" src="img/home/aasiya-fazal-logo.svg" alt="Aasiya Fazal Logo"></a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a class="contact-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
+
+
+
+    <div class="mobile-navbar">
+      <div class="nav-container">
+        <input id="checkBox" class="checkbox" type="checkbox" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <div class="logo">
+          <a href="home.html"><img id="logo" src="img/home/aasiya-fazal-logo.svg" alt="Aasiya Fazal Logo"></a>
+        </div>
+        <div class="menu-items" id="mobile-menu">
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a class="contact-link" href="#contact" onclick="menuToggle()">Contact</a></li>
+        </div>
+      </div>
+    </div>
+
   </header>
 
   <main>
@@ -40,9 +61,9 @@
     <div>
       <h1>My Work</h1>
       <div class="container">
-        <div class = "row-l">
+        <div class="row-l">
 
-        <!-- Project 1: YOLO -->
+          <!-- Project 1: YOLO -->
           <div class="project">
 
             <div class="p-image">
@@ -90,7 +111,7 @@
             </div>
           </div>
 
-        <!-- Project 3: Restaurenturer -->
+          <!-- Project 3: Restaurenturer -->
           <div class="project">
             <div class="p-image">
               <a href="restaurenturer.html">
@@ -133,7 +154,7 @@
           </div>
 
 
-          <div class="project animation">
+          <!-- <div class="project animation">
             <div class="p-image">
 
 
@@ -144,23 +165,23 @@
             <div>
               <h3><a href="tickeveryday.html">CSS Animation</a></h3>
             </div>
-          </div>
+          </div> -->
 
         </div>
-
-
-
-        </div>
-
 
 
 
       </div>
 
+
+
+
+    </div>
+
   </main>
 
   <!-- Footer -->
-  <footer class= "container" id="contact">
+  <footer class="" id="contact">
     <div class="container">
       <!-- <div>
       <img src="img/home/background-get-in-touch.jpg" alt="Get In Touch Background">
@@ -214,6 +235,7 @@
   </footer>
 
   <!--Javascript code-->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 
 </body>

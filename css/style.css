@@ -3,14 +3,23 @@ html {
 }
 
 header {
-  background-color: #111111;
+  background-color: #E4CCEA;
+  /* #DEC0E5; #E4CCEA #E1C6E7*/
   position: fixed;
-  width: 100%;
-  /* padding-top: 15px; */
+  width: 100%; 
+  padding-top: 15px;
   z-index: 9;
   padding: 0px 0 4px;
   height: 60px;
-}
+ }
+
+/* original header */
+/* header {
+  background-image: url("../img/home/background-top-bar.jpg");
+  position: fixed;
+  width: 100%;
+
+} */
 
 .container {
   padding: 0 16px;
@@ -185,12 +194,12 @@ a:focus {
 
 a:active {
   /* selected link */
-  color: #FFFFFF;
+  color: #4210AA;
 }
 
 .active {
-  color: #FFFFFF !important;
-  border-bottom: 3px solid #FFFFFF;
+  color: #4210AA !important;
+  border-bottom: 3px solid #4210AA;
   padding-bottom: 5px;
 }
 
@@ -242,7 +251,7 @@ nav>ul>li>a {
   text-align: center;
   text-transform: uppercase;
   /* background-color: #F1C3DE; */
-  background-color: #111111;
+  background-color: #E4CCEA;
 }
 
 .mobile-navbar .nav-container li {
@@ -337,9 +346,22 @@ nav>ul>li>a {
   padding-top: 0px;
 }
 
+
+
+/* original hero
 #hero {
-  /* background-image: url("../img/home/home-background-1920.jpg"); */
-  /* background-size: cover; */
+  background-image: url("../img/home/home-background-1920.jpg");
+  background-size: cover;
+  top: 60px;
+  padding-top: 90px;
+  padding-bottom: 30px;
+  text-align: center;
+
+
+} */
+
+#hero {
+
   padding-top: 90px;
   padding-bottom: 30px;
   text-align: center;
@@ -349,11 +371,11 @@ nav>ul>li>a {
 
 .hero-animation {
   position: absolute;
-  top: 0;
+  top: 60;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 300px;
+  height: 200px;
   z-index: -1;
   opacity: 0.4;
 }
@@ -804,7 +826,7 @@ About Me Styling for X-large devices (1440px or larger)
   text-align: center;
   font-weight: 700;
   font-family: 'Bungee';
-  font-size: 16px;
+  font-size: 15px;
   display: flex;
   flex-direction: column;
   padding: 10px 0px;
@@ -812,12 +834,15 @@ About Me Styling for X-large devices (1440px or larger)
   color: #ffffff;
   border-radius: 20px;
   text-transform: uppercase;
-  margin: 20px 0px;
+  margin-top: 50px;
+  margin-bottom: 15px;
 }
 
 .inner-section-mockups {
   padding-bottom: 0px;
 }
+
+
 
 .yolo main p {
   text-align: center;
@@ -930,8 +955,11 @@ About Me Styling for X-large devices (1440px or larger)
   }
 
   .yolo .style-guide-elements {
-    display: flex;
-    flex-wrap: wrap;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
   }
 
   .yolo .colour-palette {
@@ -947,9 +975,24 @@ About Me Styling for X-large devices (1440px or larger)
     padding-top: 10px;
   }
 
-  .yolo .typography {
+
+
+  .yolo .typography  {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  .yolo .typography picture {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+
+
 
   .wireframes-row .column {
     min-width: 100px;
@@ -1739,9 +1782,19 @@ YOLO styling for X-large devices (1200px or larger)
   margin-top: 10px;
 }
 
-.restaurenturer .persona {
-  padding: 0;
-  margin: 0;
+.restaurenturer .mob-tab-persona-text {
+  padding-top: 20px;
+
+}
+
+.restaurenturer .personas .mockup-row  {
+  overflow: scroll;
+
+}
+.restaurenturer .personas .mockup-row .column {
+  padding-top: 20px;
+  min-width: 96%;
+  max-width: 96%;
 }
 
 .restaurenturer .personas .mockup-row .column {
@@ -2078,10 +2131,19 @@ YOLO styling for X-large devices (1200px or larger)
     display: none;
   }
 
+  .restaurenturer .personas .mockup-row  {
+    overflow: unset;
+    justify-content: space-between;
+
+  }
   .restaurenturer .personas .mockup-row .column {
     padding-top: 20px;
-    min-width: 33.33%;
-    max-width: 33.33%;
+    min-width: 32%;
+    max-width: 32%;
+  }
+
+  .restaurenturer .mob-tab-persona-text {
+    display: none;
   }
 
   .restaurenturer .style-guide {
@@ -2145,10 +2207,10 @@ YOLO styling for X-large devices (1200px or larger)
   font-weight: 700;
   font-family: 'Sofia Sans';
   font-size: 24px;
-  padding: 20px 0px;
+  padding-top: 50px;
+  padding-bottom: 10px;
   color: #FA6400;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .tickeveryday h3 {
@@ -2170,6 +2232,11 @@ YOLO styling for X-large devices (1200px or larger)
 
 .tickeveryday span {
   font-weight: 700;
+}
+
+.tickeveryday .mockup-row .column {
+  min-width: 220px;
+  max-width: 220px;
 }
 
 .tickeveryday .competitor-analysis .column p {
@@ -2261,11 +2328,15 @@ YOLO styling for X-large devices (1200px or larger)
     font-size: 16px;
   }
 
-  .tickeveryday .competitor-analysis .column {
-    margin-right: 20px;
-    margin-top: 20px;
-    min-width: 300px;
-    max-width: 300px;
+  .tickeveryday .competitor-analysis .mockup-row {
+    display: flex;
+    overflow: unset;
+    justify-content: space-evenly;
+  }
+
+  .tickeveryday .competitor-analysis .mockup-row .column {
+    min-width: 220px;
+    max-width: 220px;
   }
 
   .tickeveryday .row-style-guide {
@@ -2374,7 +2445,13 @@ YOLO styling for X-large devices (1200px or larger)
     justify-content: center;
   }
 
-  .tickeveryday .column {
+
+  .tickeveryday .competitor-analysis .mockup-row .column {
+      min-width: 300px;
+      max-width: 300px;
+    }
+
+  .tickeveryday .mockup-row .column {
     min-width: 300px;
     max-width: 300px;
   }
@@ -2548,35 +2625,35 @@ General Layout Styling for Large devices (1024px or larger)
   }
 
   /* Projects specific styling */
-  .home .project {
-    max-width: 31%;
+
+
+  .project .read-more {
+    display: flex;
+  }
+
+  .row-l .project .row:last-child {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
   }
-
-  .home .project .read-more {
-    display: flex;
-  }
-
-  .home.project .row:last-child {
+  .project .row:last-child {
     height: 100%;
     display: flex;
     flex-direction: column;
   }
 
-  .home .project h4 {
+  .project h4 {
     margin-top: auto;
-    padding-top: 3em;
+    padding-top: 15px;
   }
 
-  .work .project {
+  .project {
     max-width: 48%;
     display: flex;
     flex-direction: column;
   }
 
-  .work .project .p-text {
+  .project .p-text {
     display: flex;
     flex-direction: column;
     justify-content: stretch;

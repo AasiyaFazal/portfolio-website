@@ -131,8 +131,7 @@ picture {
 }
 
 #logo {
-  width: 90px;
-  height: 40px;
+  width: 80px;
   position: absolute;
   top: 10px;
   left: 20px;
@@ -204,7 +203,7 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: #FFFFFF;
+  color: #4210AA;
   text-decoration: none;
   /* No Underlining when hovering over a link */
 }
@@ -220,13 +219,15 @@ a:active {
   padding-bottom: 5px;
 }
 
+a.contact-link:hover, {
+color: #4210AA !important;
+}
+
 a.contact-link:visited {
   color: #9B9785 !important;
 }
 
-a.contact-link:hover, {
-color: #4210AA !important;
-}
+
 
 nav>ul {
   list-style-type: none;
@@ -407,6 +408,7 @@ nav>ul>li>a {
   display: block;
   margin: 0px 10px;
   font-size: 14px;
+  padding-top: 20px;
 }
 
 #hero h1 span {
@@ -443,14 +445,6 @@ Navbar styling for Medium devices (640px and larger)
     display: none;
   }
 
-  .hero-animation {
-    min-height: 400px;
-  }
-
-  #hero {
-    padding-top: 120px;
-    padding-bottom: 60px;
-  }
 }
 
 /* About Me page specific styling */
@@ -464,9 +458,7 @@ Navbar styling for Medium devices (640px and larger)
   padding-right: 16px;
 }
 
-.row-about {
-  padding-bottom: 30px;
-}
+
 
 h2 {
   text-align: center;
@@ -576,6 +568,16 @@ h2 {
   margin-bottom: 40px;
 }
 
+.cv {
+  padding-top: 0;
+  padding-bottom: 5px;
+}
+
+.pictureandimage .row-about .column-about-text p {
+  margin-bottom: 15px;
+
+}
+
 /* ==============================
 About Me styling for Medium devices (640px and larger)
 ================================= */
@@ -612,6 +614,9 @@ About Me styling for Medium devices (640px and larger)
     padding-left: 20px;
     padding-right: 20px;
   }
+
+
+
 }
 
 /* ==============================
@@ -643,8 +648,20 @@ About Me Styling for Large devices (1024px or larger)
   }
 
   .column-about-text {
+    min-width: 51%;
     max-width: 51%;
   }
+
+  .pictureandimage .row-about .column-about-text p {
+    margin-bottom: 12px;
+
+  }
+
+  .row-about {
+    padding-bottom: 50px;
+  }
+
+
 
   .informal {
     margin-top: 15px;
@@ -659,7 +676,7 @@ About Me Styling for Large devices (1024px or larger)
   }
 
   .cv {
-    padding-top: 20px;
+    padding-top: 5px;
   }
 
   .tool {
@@ -694,12 +711,12 @@ About Me Styling for Large devices (1024px or larger)
     margin: 0;
   }
 
+
+
   /* .about .button {
       margin-top: 10px;
     } */
-  .section .skillset {
-    padding-top: 20px;
-  }
+
 
   .subskill {
     min-height: 230px;
@@ -930,9 +947,14 @@ About Me Styling for X-large devices (1440px or larger)
   overflow: scroll;
 }
 
+.yolo .mockup-row {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
 .mockup-row .column {
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 200px;
+  max-width: 200px;
   margin-right: 15px;
 }
 
@@ -1254,6 +1276,63 @@ YOLO styling for X-large devices (1200px or larger)
   background-color: #E66011;
 }
 
+.user-flow .jtbds {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-flow .jtbd1 .column {
+  min-width: 30%;
+  max-width: 30%;
+}
+
+.user-flow .jtbd2 .column {
+  min-width: 18%;
+  max-width: 18%;
+}
+
+.user-flow .jtbds .column {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-flow .jtbds .description p {
+  padding-bottom: 20px;
+}
+
+.user-flow .jtbd1 {
+  width: 40%;
+}
+
+.user-flow .jtbd2 {
+  width: 40%;
+}
+
+.wellnus .user-flow .jtbds .jtbd1 {
+  border: 1px solid #ddd;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded border */
+  padding-bottom: 20px;
+  /* Some padding */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.wellnus .user-flow .jtbds .jtbd2 {
+  border: 1px solid #ddd;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded border */
+  padding-bottom: 20px;
+  /* Some padding */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
 .wellnus .mockup-row p {
   padding-top: 10px;
 }
@@ -1262,12 +1341,7 @@ YOLO styling for X-large devices (1200px or larger)
   padding-bottom: 10px;
 }
 
-.wellnus .jtbd2 .column {
-  max-width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-}
+
 
 .wellnus .wireframes-row .column {
   margin-right: 20px;
@@ -1302,6 +1376,24 @@ YOLO styling for X-large devices (1200px or larger)
   margin: 30px auto;
 }
 
+.wellnus .mockups .inner-section-mockups .container {
+  padding-right: 0;
+}
+
+.wellnus .mockup-row .column {
+  min-width: 200px;
+  max-width: 200px;
+}
+
+.wellnus .android .column {
+  min-width: 150px;
+  max-width: 150px;
+}
+
+.wellnus .mockups .mockup-row .column:last-child {
+  margin-right: 16px;
+}
+
 .ios-mockups .inner-section-mockups {
   background-image: url("../img/wellnus/mockup-background-480.jpg");
   background-size: cover;
@@ -1313,13 +1405,13 @@ YOLO styling for X-large devices (1200px or larger)
 }
 
 .ios {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .android {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 100px;
 }
 
 .prototype {
@@ -1457,6 +1549,16 @@ YOLO styling for X-large devices (1200px or larger)
     max-width: 280px;
   }
 
+  .wellnus .android .column {
+    min-width: 160px;
+    max-width: 160px;
+  }
+
+  .wellnus .android  {
+  padding-top: 30px;
+  padding-bottom: 160px;
+  }
+
   .wellnus .testing .mockup-row {
     justify-content: space-evenly;
   }
@@ -1477,6 +1579,10 @@ YOLO styling for X-large devices (1200px or larger)
 
   .testing-images .mockup-row {
     justify-content: space-evenly;
+  }
+
+  .wellnus .mockups .mockup-row .column:last-child {
+    margin-right: 20px;
   }
 
   .wellnus .second {
@@ -1500,12 +1606,10 @@ YOLO styling for X-large devices (1200px or larger)
     background-size: contain;
   }
 
-  .android .inner-section-mockups {
+  .android-mockups .inner-section-mockups {
     background-image: url("../img/wellnus/android-background-767.jpg");
     background-size: cover;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
+
   }
 }
 
@@ -1572,8 +1676,19 @@ YOLO styling for X-large devices (1200px or larger)
     background-size: cover;
   }
 
-  .android .mockup-row {
-    overflow: unset;
+
+  .wellnus .android .column {
+    min-width: 180px;
+    max-width: 180px;
+  }
+
+  .wellnus .android  {
+  padding-top: 30px;
+  padding-bottom: 160px;
+  }
+
+  .wellnus .mockups .mockup-row .column:last-child {
+    margin-right: 30px;
   }
 }
 
@@ -1583,6 +1698,10 @@ YOLO styling for X-large devices (1200px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .wellnus .mockups .ios .column:last-child {
+    margin-right: 50px;
   }
 
   .wellnus .inner-section h2 {
@@ -1635,8 +1754,21 @@ YOLO styling for X-large devices (1200px or larger)
     background-size: cover;
   }
 
-  .mockup-row .column:last-child {
+  .wellnus .ios .column:last-child {
     margin-right: 50px;
+  }
+
+  .wellnus .android {
+    padding-bottom: 250px;
+  }
+
+  .wellnus .android .column {
+    min-width: 200px;
+    max-width: 200px;  }
+
+  .wellnus .android {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -1786,10 +1918,11 @@ YOLO styling for X-large devices (1200px or larger)
   color: #C1B59C;
 }
 
+
 .restaurenturer .competitor-analysis .opentable .mockup2 {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100%;
 }
 
@@ -1858,6 +1991,19 @@ YOLO styling for X-large devices (1200px or larger)
 
 .mockup-row .column:last-child {
   margin-right: 0;
+}
+
+.restaurenturer .mockups .inner-section-mockups .container {
+  padding-right: 0;
+}
+
+.restaurenturer .mockups .mockup-row .column {
+  min-width: 200px;
+  max-width: 200px;
+}
+
+.restaurenturer .mockups .mockup-row .column:last-child {
+  margin-right: 16px;
 }
 
 /* Restaurenturer Medium devices (640px and larger) styling */
@@ -2022,6 +2168,10 @@ YOLO styling for X-large devices (1200px or larger)
   .restaurenturer .multi-device {
     display: block;
   }
+
+  .restaurenturer .mockups .mockup-row .column:last-child {
+    margin-right: 20px;
+  }
 }
 
 /* Restaurenturer Larger devices (1024px and larger) styling */
@@ -2176,6 +2326,10 @@ YOLO styling for X-large devices (1200px or larger)
     background-size: cover;
     padding-bottom: 30px;
   }
+
+  .restaurenturer .mockups .mockup-row .column:last-child {
+    margin-right: 30px;
+  }
 }
 
 /* Restaurenturer V.Large devices (1200px and larger) styling */
@@ -2219,6 +2373,10 @@ YOLO styling for X-large devices (1200px or larger)
   .restaurenturer .competitor-analysis .phone-screens .column {
     width: 450px;
   }
+
+  .restaurenturer .mockups .mockup-row .column:last-child {
+    margin-right: 50px;
+  }
 }
 
 /* tickeveryday standard specific styling */
@@ -2254,8 +2412,13 @@ YOLO styling for X-large devices (1200px or larger)
 }
 
 .tickeveryday .mockup-row .column {
-  min-width: 220px;
-  max-width: 220px;
+  min-width: 200px;
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+.tickeveryday .mockup-row .column:last-child {
+  margin-right: 0px;
 }
 
 .tickeveryday .competitor-analysis .column p {
@@ -2321,10 +2484,20 @@ YOLO styling for X-large devices (1200px or larger)
   background-size: cover;
 }
 
-.tickeveryday .mockups-4 .column {
-  min-width: 45%;
-  max-width: 45%;
+.tickeveryday .mockups-4 .container {
+  padding-right: 0;
 }
+
+.tickeveryday .mockups-4 .mockup-row .column {
+  min-width: 200px;
+  max-width: 200px;
+}
+
+.tickeveryday .mockups-4 .mockup-row .column:last-child {
+  margin-right: 16px;
+}
+
+
 
 .tickeveryday .case-study .button {
   margin-top: 20px;
@@ -2441,11 +2614,21 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .tickeveryday .mockups-4 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-image: url("../img/tickeveryday/iphone-background-767.jpg");
     background-size: contain;
   }
+
+  .tickeveryday .mockups-4 .mockup-row .column {
+    min-width: 220px;
+    max-width: 220px;
+  }
+
+  .tickeveryday .mockups-4 .mockup-row .column:last-child {
+    margin-right: 20px;
+  }
+
 }
 
 /* tickeveryday Larger devices (1024px and larger) styling */
@@ -2461,7 +2644,7 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .tickeveryday .competitor-analysis .mockup-row {
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
 
@@ -2493,6 +2676,15 @@ YOLO styling for X-large devices (1200px or larger)
   .tickeveryday .mockups-4 {
     background-image: url("../img/tickeveryday/iphone-background-1024.jpg");
     background-size: contain;
+  }
+
+  .tickeveryday .mockups-4 .mockup-row  {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tickeveryday .mockups-4 .mockup-row .column:last-child {
+    margin-right: 30px;
   }
 }
 
@@ -2537,15 +2729,27 @@ YOLO styling for X-large devices (1200px or larger)
     background-image: url("../img/tickeveryday/iphone-background-1200.jpg");
     background-size: contain;
   }
+
+  .tickeveryday .mockups-4 .mockup-row .column:last-child {
+    margin-right: 50px;
+  }
 }
 
 /* Footer specific styling */
 .social-media {
-  display: inline-block;
-  margin-top: 15px;
-  margin-bottom: 0px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.social-media:last-child {
+  margin-right: 0px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+
+
 }
 
 footer {
@@ -2630,8 +2834,12 @@ General Layout Styling for Large devices (1024px or larger)
     margin-right: auto;
   }
 
+  #hero span {
+    font-size: 26px;
+  }
+
   #hero p {
-    padding: 0 50px;
+    font-size: 20px;
   }
 
   h1 {
@@ -2703,7 +2911,8 @@ General Layout Styling for X-large devices (1440px or larger)
       margin-right: auto;
     } */
   #hero p {
-    padding: 0 50px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 
   body {

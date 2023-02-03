@@ -14,28 +14,24 @@ html {
 
 header {
   position: fixed;
-  background-color: #E4CCEA;
+  background-color: #e4ccea;
   width: 100%;
   padding-top: 15px;
   z-index: 9;
   padding: 0px 0 4px;
   height: 60px;
-
 }
 
 .header-home {
-background-color: transparent;
+  background-color: transparent;
 }
 
 .active-bg {
-background-color: #E4CCEA;
-/* background-color: #dedaf4; */
-/* background-color: #d9b0e7;  */
-/* background-color: #d1cceb; */
-/* background-color: #bacaf0;  */
-
-
-
+  background-color: #e4ccea;
+  /* background-color: #dedaf4; */
+  /* background-color: #d9b0e7;  */
+  /* background-color: #d1cceb; */
+  /* background-color: #bacaf0;  */
 }
 
 .container {
@@ -71,8 +67,8 @@ background-color: #E4CCEA;
 }
 
 body {
-  background-color: #FFFFFF;
-  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
   font-weight: 400;
@@ -82,12 +78,15 @@ body {
   color: #000000;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
 h1 {
-  font-size: 2.0em;
+  font-size: 2em;
   font-weight: 700;
   text-align: center;
   margin: 20px auto;
@@ -150,7 +149,7 @@ img {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #D11D70;
+  background-color: #d11d70;
   color: #ffffff;
   /* needed to override the default link color */
   font-weight: 500;
@@ -171,7 +170,8 @@ img {
   color: #ffffff;
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
@@ -190,58 +190,56 @@ img {
 } */
 /* Navbar styling */
 a {
-  color: #9B9785;
+  color: #9b9785;
   text-decoration: none;
   font-weight: 600;
 }
 
 a:visited {
   /* visited link */
-  color: #9B9785;
+  color: #9b9785;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #4210AA;
+  color: #4210aa;
   text-decoration: none;
   /* No Underlining when hovering over a link */
 }
 
 a:active {
   /* selected link */
-  color: #4210AA;
+  color: #4210aa;
 }
 
 .active {
-  color: #4210AA !important;
-  border-bottom: 3px solid #4210AA;
+  color: #4210aa !important;
+  border-bottom: 3px solid #4210aa;
   padding-bottom: 5px;
 }
 
-a.contact-link:hover, {
-color: #4210AA !important;
+a.contact-link:hover {
+  color: #4210aa !important;
 }
 
 a.contact-link:visited {
-  color: #9B9785 !important;
+  color: #9b9785 !important;
 }
 
-
-
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li {
+nav > ul > li {
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
 }
 
@@ -269,7 +267,7 @@ nav>ul>li>a {
   text-align: center;
   text-transform: uppercase;
   /* background-color: #F1C3DE; */
-  background-color: #E4CCEA;
+  background-color: #e4ccea;
 }
 
 .mobile-navbar .nav-container li {
@@ -313,7 +311,7 @@ nav>ul>li>a {
   height: 4px;
   width: 100%;
   border-radius: 1px;
-  background: #9B9785;
+  background: #9b9785;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -335,23 +333,23 @@ nav>ul>li>a {
   font-size: 1.5rem;
 }
 
-.nav-container input[type="checkbox"]:checked~.menu-items {
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
 }
 
-.nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
   transform: rotate(45deg);
 }
 
-.nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
   transform: scaleY(0);
 }
 
-.nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   transform: rotate(-45deg);
 }
 
-.nav-container input[type="checkbox"]:checked~.logo {
+.nav-container input[type="checkbox"]:checked ~ .logo {
   display: none;
 }
 
@@ -364,9 +362,6 @@ nav>ul>li>a {
   padding-top: 0px;
 }
 
-
-
-
 #hero {
   background-image: url("../img/home/get-in-touch-background-480.jpg");
   opacity: 0.7;
@@ -376,8 +371,6 @@ nav>ul>li>a {
   padding-top: 90px;
   padding-bottom: 30px;
   text-align: center;
-
-
 }
 
 /* #hero {
@@ -444,7 +437,6 @@ Navbar styling for Medium devices (640px and larger)
   .mobile-navbar {
     display: none;
   }
-
 }
 
 /* About Me page specific styling */
@@ -457,8 +449,6 @@ Navbar styling for Medium devices (640px and larger)
   padding-left: 16px;
   padding-right: 16px;
 }
-
-
 
 h2 {
   text-align: center;
@@ -512,43 +502,43 @@ h2 {
 }
 
 .dsubskillset {
-  background-color: #F7C7DF;
+  background-color: #f7c7df;
   text-align: center;
   padding: 0;
 }
 
 .subskill:nth-child(1) {
-  background-color: #FFEDF7;
+  background-color: #ffedf7;
 }
 
 .subskill:nth-child(2) {
-  background-color: #F6E6F4;
+  background-color: #f6e6f4;
 }
 
 .subskill:nth-child(3) {
-  background-color: #E7CCF0;
+  background-color: #e7ccf0;
 }
 
 .subskill:nth-child(4) {
-  background-color: #DCB5D5;
+  background-color: #dcb5d5;
 }
 
 .pmsubskillset {
-  background-color: #D8F2F7;
+  background-color: #d8f2f7;
   text-align: center;
   padding: 0;
 }
 
 .col-md-6-v2:nth-child(1) {
-  background-color: #C4E5F9;
+  background-color: #c4e5f9;
 }
 
 .col-md-6-v2:nth-child(2) {
-  background-color: #87CAF0;
+  background-color: #87caf0;
 }
 
 .col-md-6-v2:nth-child(3) {
-  background-color: #2AA1E4;
+  background-color: #2aa1e4;
 }
 
 .subskill .heading {
@@ -575,7 +565,6 @@ h2 {
 
 .pictureandimage .row-about .column-about-text p {
   margin-bottom: 15px;
-
 }
 
 /* ==============================
@@ -614,9 +603,6 @@ About Me styling for Medium devices (640px and larger)
     padding-left: 20px;
     padding-right: 20px;
   }
-
-
-
 }
 
 /* ==============================
@@ -654,14 +640,11 @@ About Me Styling for Large devices (1024px or larger)
 
   .pictureandimage .row-about .column-about-text p {
     margin-bottom: 12px;
-
   }
 
   .row-about {
     padding-bottom: 50px;
   }
-
-
 
   .informal {
     margin-top: 15px;
@@ -711,12 +694,9 @@ About Me Styling for Large devices (1024px or larger)
     margin: 0;
   }
 
-
-
   /* .about .button {
       margin-top: 10px;
     } */
-
 
   .subskill {
     min-height: 230px;
@@ -762,25 +742,25 @@ About Me Styling for X-large devices (1440px or larger)
 }
 
 .project a {
-  color: #D11D70;
+  color: #d11d70;
 }
 
 .project a:visited {
   /* visited link */
-  color: #D11D70;
+  color: #d11d70;
   text-decoration: none;
 }
 
 .project a:hover,
 .project a:focus {
-  color: #4210AA;
+  color: #4210aa;
   text-decoration: none;
   /* No Underlining when hovering over a link */
 }
 
 .project a:active {
   /* selected link */
-  color: #4210AA;
+  color: #4210aa;
 }
 
 /* CSS Animation styling */
@@ -861,7 +841,7 @@ About Me Styling for X-large devices (1440px or larger)
   background-color: #230407;
   text-align: center;
   font-weight: 700;
-  font-family: 'Bungee';
+  font-family: "Bungee";
   font-size: 15px;
   display: flex;
   flex-direction: column;
@@ -877,8 +857,6 @@ About Me Styling for X-large devices (1440px or larger)
 .inner-section-mockups {
   padding-bottom: 0px;
 }
-
-
 
 .yolo main p {
   text-align: center;
@@ -913,32 +891,32 @@ About Me Styling for X-large devices (1440px or larger)
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   min-width: 46%;
 }
 
 .colour:nth-child(1) {
-  background-color: #45B6FE;
+  background-color: #45b6fe;
 }
 
 .colour:nth-child(2) {
-  background-color: #84CC34;
+  background-color: #84cc34;
 }
 
 .colour:nth-child(3) {
-  background-color: #FF3391;
+  background-color: #ff3391;
 }
 
 .colour:nth-child(4) {
-  background-color: #36008D;
+  background-color: #36008d;
 }
 
 .colour:nth-child(5) {
-  background-color: #1E630C;
+  background-color: #1e630c;
 }
 
 .colour:nth-child(6) {
-  background-color: #F8E646;
+  background-color: #f8e646;
   color: #111111;
 }
 
@@ -987,7 +965,7 @@ About Me Styling for X-large devices (1440px or larger)
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
-    color: #FFFFFF;
+    color: #ffffff;
     min-width: 30%;
   }
 
@@ -996,11 +974,10 @@ About Me Styling for X-large devices (1440px or larger)
   }
 
   .yolo .style-guide-elements {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   .yolo .colour-palette {
@@ -1016,9 +993,7 @@ About Me Styling for X-large devices (1440px or larger)
     padding-top: 10px;
   }
 
-
-
-  .yolo .typography  {
+  .yolo .typography {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -1032,11 +1007,21 @@ About Me Styling for X-large devices (1440px or larger)
     padding-top: 10px;
   }
 
-
+  .yolo .wireframes-row {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+  }
 
 
   .wireframes-row .column {
-    min-width: 100px;
+    min-width: 200px;
+    max-width: 200px;
+  }
+
+  .yolo .wireframes-row .column {
+    min-width: 180px;
+    max-width: 180px;
   }
 
   .yolo .mockup-row .column {
@@ -1153,32 +1138,33 @@ YOLO styling for X-large devices (1200px or larger)
 /* WEllnUS standard specific styling */
 .wellnus .inner-section h2 {
   font-weight: 700;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 20px;
   padding: 20px 0;
-  color: #0B63F6;
+  color: #0b63f6;
   text-align: left;
 }
 
 .wellnus h3 {
   font-weight: 700;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 17px;
-  color: rgba(11, 99, 246, 0.6);
+  color: rgba(11, 99, 246, 0.8);
   text-align: left;
 }
 
 .wellnus h4 {
   font-weight: 700;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 14px;
   padding-bottom: 10px;
   padding-top: 10px;
   text-align: center;
-  background-image: linear-gradient(45deg, #6510B2, #F1027C);
+  background-image: linear-gradient(45deg, #6510b2, #f1027c);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
@@ -1188,7 +1174,7 @@ YOLO styling for X-large devices (1200px or larger)
   padding-bottom: 10px;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: 'open sans';
+  font-family: "open sans";
   font-size: 14px;
 }
 
@@ -1205,19 +1191,6 @@ YOLO styling for X-large devices (1200px or larger)
   font-weight: 700;
 }
 
-.wellnus .overview-paragraph {
-  /* background-image: url("../img/wellnus/we-overview-480.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-bottom: 200px;
-  opacity: 0.8; */
-}
-
-/* .wellnus .discovery {
-  background-image: url("../img/wellnus/background-discovery-480.jpg");
-  background-size: cover;
-
-} */
 .user-row {
   display: flex;
   flex-direction: column;
@@ -1245,35 +1218,35 @@ YOLO styling for X-large devices (1200px or larger)
 }
 
 .user:nth-child(1) {
-  background-color: #F895B8;
+  background-color: #f895b8;
 }
 
 .user:nth-child(2) {
-  background-color: #FFD86F;
+  background-color: #ffd86f;
 }
 
 .user:nth-child(3) {
-  background-color: #A7A6F5;
+  background-color: #a7a6f5;
 }
 
 .user:nth-child(4) {
-  background-color: #DD8D8E;
+  background-color: #dd8d8e;
 }
 
 .user:nth-child(5) {
-  background-color: #59A9CF;
+  background-color: #59a9cf;
 }
 
 .user:nth-child(6) {
-  background-color: #CAE038;
+  background-color: #cae038;
 }
 
 .user:nth-child(7) {
-  background-color: #CF8CB6;
+  background-color: #cf8cb6;
 }
 
 .user:nth-child(8) {
-  background-color: #E66011;
+  background-color: #e66011;
 }
 
 .user-flow .jtbds {
@@ -1341,8 +1314,6 @@ YOLO styling for X-large devices (1200px or larger)
   padding-bottom: 10px;
 }
 
-
-
 .wellnus .wireframes-row .column {
   margin-right: 20px;
 }
@@ -1358,7 +1329,7 @@ YOLO styling for X-large devices (1200px or larger)
 }
 
 .wellnus .style-guide a {
-  color: #6510B2;
+  color: #6510b2;
   font-weight: 700;
 }
 
@@ -1386,8 +1357,8 @@ YOLO styling for X-large devices (1200px or larger)
 }
 
 .wellnus .android .column {
-  min-width: 150px;
-  max-width: 150px;
+  min-width: 140px;
+  max-width: 140px;
 }
 
 .wellnus .mockups .mockup-row .column:last-child {
@@ -1411,7 +1382,7 @@ YOLO styling for X-large devices (1200px or larger)
 
 .android {
   padding-top: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 .prototype {
@@ -1425,11 +1396,11 @@ YOLO styling for X-large devices (1200px or larger)
 }
 
 .prototype:nth-child(1) {
-  background-color: #699DF6;
+  background-color: #699df6;
 }
 
 .prototype:nth-child(2) {
-  background-color: #F1C40F;
+  background-color: #f1c40f;
 }
 
 .prototype a {
@@ -1550,21 +1521,23 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .wellnus .android .column {
-    min-width: 160px;
-    max-width: 160px;
+    min-width: 200px;
+    max-width: 200px;
   }
 
-  .wellnus .android  {
-  padding-top: 30px;
-  padding-bottom: 160px;
+  .wellnus .android {
+    padding-top: 30px;
+    padding-bottom: 200px;
   }
 
   .wellnus .testing .mockup-row {
     justify-content: space-evenly;
+    overflow: hidden;
   }
 
   .wellnus .competitor-analysis .mockup-row {
     justify-content: space-evenly;
+    overflow: hidden;
   }
 
   .wellnus .style-guide {
@@ -1579,6 +1552,7 @@ YOLO styling for X-large devices (1200px or larger)
 
   .testing-images .mockup-row {
     justify-content: space-evenly;
+    overflow: hidden;
   }
 
   .wellnus .mockups .mockup-row .column:last-child {
@@ -1609,7 +1583,6 @@ YOLO styling for X-large devices (1200px or larger)
   .android-mockups .inner-section-mockups {
     background-image: url("../img/wellnus/android-background-767.jpg");
     background-size: cover;
-
   }
 }
 
@@ -1635,7 +1608,7 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .wellnus h4 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .user-flow {
@@ -1644,11 +1617,12 @@ YOLO styling for X-large devices (1200px or larger)
 
   .wellnus .competitor-analysis .mockup-row {
     justify-content: space-evenly;
+    overflow: hidden;
   }
 
   .wellnus .competitor-analysis .meal-plan .column {
     min-width: 300px;
-    max-width: 300px
+    max-width: 300px;
   }
 
   .wellnus .competitor-analysis .social .column {
@@ -1676,15 +1650,16 @@ YOLO styling for X-large devices (1200px or larger)
     background-size: cover;
   }
 
-
   .wellnus .android .column {
     min-width: 180px;
     max-width: 180px;
   }
 
-  .wellnus .android  {
-  padding-top: 30px;
-  padding-bottom: 160px;
+  .wellnus .android {
+    padding-top: 30px;
+    padding-bottom: 160px;
+    justify-content: space-evenly;
+    overflow: hidden;
   }
 
   .wellnus .mockups .mockup-row .column:last-child {
@@ -1723,7 +1698,7 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .wellnus h4 {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .social .column {
@@ -1732,6 +1707,7 @@ YOLO styling for X-large devices (1200px or larger)
 
   .social .mockup-row {
     justify-content: center;
+    overflow: hidden;
   }
 
   .wellnus .style-guide {
@@ -1764,30 +1740,31 @@ YOLO styling for X-large devices (1200px or larger)
 
   .wellnus .android .column {
     min-width: 200px;
-    max-width: 200px;  }
+    max-width: 200px;
+  }
 
   .wellnus .android {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 }
 
 /* restaurenturer standard specific styling */
 .restaurenturer .inner-section h2 {
   font-weight: 700;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 24px;
   padding: 20px 0px;
-  color: #C1B59C;
+  color: #c1b59c;
   text-align: center;
   text-transform: uppercase;
 }
 
 .restaurenturer h3 {
   font-weight: 700;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 17px;
-  color: #50778A;
+  color: #50778a;
   text-align: left;
   text-transform: uppercase;
 }
@@ -1795,9 +1772,9 @@ YOLO styling for X-large devices (1200px or larger)
 .restaurenturer main p {
   margin-top: 0;
   margin-bottom: 10px;
-  font-family: 'open sans';
+  font-family: "open sans";
   font-size: 14px;
-  color: #7D7377;
+  color: #7d7377;
 }
 
 .restaurenturer span {
@@ -1838,7 +1815,7 @@ YOLO styling for X-large devices (1200px or larger)
 }
 
 .insight:nth-child(1) {
-  background-color: #F4E7B9;
+  background-color: #f4e7b9;
 }
 
 .insight:nth-child(1) p {
@@ -1846,25 +1823,25 @@ YOLO styling for X-large devices (1200px or larger)
 }
 
 .insight:nth-child(2) {
-  background-color: #C1B59C;
+  background-color: #c1b59c;
   display: none;
 }
 
 .insight:nth-child(2) p {
-  color: #C1B59C;
+  color: #c1b59c;
 }
 
 .insight:nth-child(3) {
-  background-color: #50778A;
+  background-color: #50778a;
   display: none;
 }
 
 .insight:nth-child(3) p {
-  color: #50778A;
+  color: #50778a;
 }
 
 .insight:nth-child(4) {
-  background-color: #DFDED9;
+  background-color: #dfded9;
 }
 
 .insight:nth-child(4) P {
@@ -1872,7 +1849,7 @@ YOLO styling for X-large devices (1200px or larger)
 }
 
 .insight:nth-child(5) {
-  background-color: #E7EBEE;
+  background-color: #e7ebee;
 }
 
 .insight:nth-child(5) p {
@@ -1880,21 +1857,21 @@ YOLO styling for X-large devices (1200px or larger)
 }
 
 .insight:nth-child(6) {
-  background-color: #C690BF;
+  background-color: #c690bf;
   display: none;
 }
 
 .insight:nth-child(6) p {
-  color: #C690BF;
+  color: #c690bf;
 }
 
 .insight:nth-child(7) {
-  background-color: #7D7377;
+  background-color: #7d7377;
   display: none;
 }
 
 .insight:nth-child(8) {
-  background-color: #CBD6DA;
+  background-color: #cbd6da;
 }
 
 .insight:nth-child(8) p {
@@ -1902,7 +1879,7 @@ YOLO styling for X-large devices (1200px or larger)
 }
 
 .insight:nth-child(9) {
-  background-color: #E6D6E4;
+  background-color: #e6d6e4;
 }
 
 .insight:nth-child(9) p {
@@ -1910,14 +1887,13 @@ YOLO styling for X-large devices (1200px or larger)
 }
 
 .insight:nth-child(10) {
-  background-color: #C1B59C;
+  background-color: #c1b59c;
   display: none;
 }
 
 .insight:nth-child(10) p {
-  color: #C1B59C;
+  color: #c1b59c;
 }
-
 
 .restaurenturer .competitor-analysis .opentable .mockup2 {
   margin-right: auto;
@@ -1936,12 +1912,10 @@ YOLO styling for X-large devices (1200px or larger)
 
 .restaurenturer .mob-tab-persona-text {
   padding-top: 20px;
-
 }
 
-.restaurenturer .personas .mockup-row  {
+.restaurenturer .personas .mockup-row {
   overflow: scroll;
-
 }
 .restaurenturer .personas .mockup-row .column {
   padding-top: 20px;
@@ -2034,7 +2008,7 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .insight:nth-child(1) {
-    background-color: #DFDED9;
+    background-color: #dfded9;
   }
 
   .insight:nth-child(1) p {
@@ -2042,25 +2016,25 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .insight:nth-child(2) {
-    background-color: #C1B59C;
+    background-color: #c1b59c;
     display: flex;
   }
 
   .insight:nth-child(2) p {
-    color: #C1B59C;
+    color: #c1b59c;
   }
 
   .insight:nth-child(3) {
-    background-color: #50778A;
+    background-color: #50778a;
     display: flex;
   }
 
   .insight:nth-child(3) p {
-    color: #50778A;
+    color: #50778a;
   }
 
   .insight:nth-child(4) {
-    background-color: #E7EBEE;
+    background-color: #e7ebee;
   }
 
   .insight:nth-child(4) P {
@@ -2068,7 +2042,7 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .insight:nth-child(5) {
-    background-color: #E8DCE7;
+    background-color: #e8dce7;
   }
 
   .insight:nth-child(5) p {
@@ -2076,21 +2050,21 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .insight:nth-child(6) {
-    background-color: #C690BF;
+    background-color: #c690bf;
     display: flex;
   }
 
   .insight:nth-child(6) p {
-    color: #C690BF;
+    color: #c690bf;
   }
 
   .insight:nth-child(7) {
-    background-color: #7D7377;
+    background-color: #7d7377;
     display: flex;
   }
 
   .insight:nth-child(8) {
-    background-color: #D7D5D6;
+    background-color: #d7d5d6;
   }
 
   .insight:nth-child(8) p {
@@ -2098,7 +2072,7 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .insight:nth-child(9) {
-    background-color: #DFDED9;
+    background-color: #dfded9;
   }
 
   .insight:nth-child(9) p {
@@ -2106,12 +2080,12 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .insight:nth-child(10) {
-    background-color: #C1B59C;
+    background-color: #c1b59c;
     display: flex;
   }
 
   .insight:nth-child(10) p {
-    color: #C1B59C;
+    color: #c1b59c;
   }
 
   .restaurenturer .competitor-analysis .column {
@@ -2211,6 +2185,7 @@ YOLO styling for X-large devices (1200px or larger)
 
   .restaurenturer .competitor-analysis .mockup-row {
     justify-content: center;
+    overflow: hidden;
   }
 
   .restaurenturer .competitor-analysis .opentable .column {
@@ -2224,7 +2199,7 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .insight:nth-child(1) {
-    background-color: #DFDED9;
+    background-color: #dfded9;
   }
 
   .insight:nth-child(1) p {
@@ -2232,15 +2207,15 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .insight:nth-child(2) {
-    background-color: #C1B59C;
+    background-color: #c1b59c;
   }
 
   .insight:nth-child(2) p {
-    color: #C1B59C;
+    color: #c1b59c;
   }
 
   .insight:nth-child(3) {
-    background-color: #E7EBEE;
+    background-color: #e7ebee;
   }
 
   .insight:nth-child(3) p {
@@ -2248,15 +2223,15 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .insight:nth-child(4) {
-    background-color: #C690BF;
+    background-color: #c690bf;
   }
 
   .insight:nth-child(4) P {
-    color: #C690BF;
+    color: #c690bf;
   }
 
   .insight:nth-child(5) {
-    background-color: #DFC8DD;
+    background-color: #dfc8dd;
   }
 
   .insight:nth-child(5) p {
@@ -2264,15 +2239,15 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .insight:nth-child(6) {
-    background-color: #7D7377;
+    background-color: #7d7377;
   }
 
   .insight:nth-child(6) p {
-    color: #7D7377;
+    color: #7d7377;
   }
 
   .insight:nth-child(7) {
-    background-color: #CBD6DA;
+    background-color: #cbd6da;
   }
 
   .insight:nth-child(7) p {
@@ -2280,15 +2255,15 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .insight:nth-child(8) {
-    background-color: #50778A;
+    background-color: #50778a;
   }
 
   .insight:nth-child(8) p {
-    color: #50778A;
+    color: #50778a;
   }
 
   .insight:nth-child(9) {
-    background-color: #DFDED9;
+    background-color: #dfded9;
   }
 
   .insight:nth-child(9) p {
@@ -2296,14 +2271,13 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .insight:nth-child(10) {
-    background-color: #C1B59C;
+    background-color: #c1b59c;
     display: none;
   }
 
-  .restaurenturer .personas .mockup-row  {
-    overflow: unset;
+  .restaurenturer .personas .mockup-row {
+    overflow: hidden;
     justify-content: space-between;
-
   }
   .restaurenturer .personas .mockup-row .column {
     padding-top: 20px;
@@ -2382,26 +2356,26 @@ YOLO styling for X-large devices (1200px or larger)
 /* tickeveryday standard specific styling */
 .tickeveryday .inner-section h2 {
   font-weight: 700;
-  font-family: 'Sofia Sans';
+  font-family: "Sofia Sans";
   font-size: 24px;
   padding-top: 50px;
   padding-bottom: 10px;
-  color: #FA6400;
+  color: #fa6400;
   text-align: center;
 }
 
 .tickeveryday h3 {
   font-weight: 700;
-  font-family: 'Sofia Sans';
+  font-family: "Sofia Sans";
   font-size: 17px;
-  color: #0F31ED;
+  color: #0f31ed;
   text-align: center;
 }
 
 .tickeveryday main p {
   margin-top: 0;
   margin-bottom: 10px;
-  font-family: 'open sans';
+  font-family: "open sans";
   font-size: 14px;
   color: #000000;
   text-align: left;
@@ -2496,8 +2470,6 @@ YOLO styling for X-large devices (1200px or larger)
 .tickeveryday .mockups-4 .mockup-row .column:last-child {
   margin-right: 16px;
 }
-
-
 
 .tickeveryday .case-study .button {
   margin-top: 20px;
@@ -2628,7 +2600,6 @@ YOLO styling for X-large devices (1200px or larger)
   .tickeveryday .mockups-4 .mockup-row .column:last-child {
     margin-right: 20px;
   }
-
 }
 
 /* tickeveryday Larger devices (1024px and larger) styling */
@@ -2645,13 +2616,13 @@ YOLO styling for X-large devices (1200px or larger)
 
   .tickeveryday .competitor-analysis .mockup-row {
     justify-content: space-evenly;
+    overflow: unset;
   }
 
-
   .tickeveryday .competitor-analysis .mockup-row .column {
-      min-width: 300px;
-      max-width: 300px;
-    }
+    min-width: 300px;
+    max-width: 300px;
+  }
 
   .tickeveryday .mockup-row .column {
     min-width: 300px;
@@ -2678,9 +2649,10 @@ YOLO styling for X-large devices (1200px or larger)
     background-size: contain;
   }
 
-  .tickeveryday .mockups-4 .mockup-row  {
+  .tickeveryday .mockups-4 .mockup-row {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
   }
 
   .tickeveryday .mockups-4 .mockup-row .column:last-child {
@@ -2748,8 +2720,6 @@ YOLO styling for X-large devices (1200px or larger)
   display: flex;
   justify-content: center;
   margin-top: 0px;
-
-
 }
 
 footer {
@@ -2768,7 +2738,7 @@ footer {
 
 #contact p {
   padding: 10px 0px;
-  margin: 0px
+  margin: 0px;
 }
 
 /* ==============================
@@ -2779,7 +2749,7 @@ General Layout Styling for Medium devices (640px and larger)
     text-align: center;
   }
 
-  nav>ul {
+  nav > ul {
     top: 15px;
     position: absolute;
     right: 15px;
@@ -2852,7 +2822,6 @@ General Layout Styling for Large devices (1024px or larger)
   }
 
   /* Projects specific styling */
-
 
   .project .read-more {
     display: flex;

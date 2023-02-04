@@ -18,7 +18,7 @@
   <header>
     <div class="desktop-navbar">
       <div class="nav-container">
-        <a href="index.html"><img id="logo" src="img/logo.svg" alt="Aasiya Fazal Logo"></a>
+        <a href="index.html"><img class="logo" src="img/logo.svg" alt="Aasiya Fazal Logo"></a>
         <nav>
           <ul class="navigation">
             <li><a href="about.html">About</a></li>
@@ -39,8 +39,8 @@
           <span class="line line2"></span>
           <span class="line line3"></span>
         </div>
-        <div class="logo">
-          <a href="index.html"><img id="logo" src="img/logo.svg" alt="Aasiya Fazal Logo"></a>
+        <div class="logo-box">
+          <a href="index.html"><img class="logo" src="img/logo.svg" alt="Aasiya Fazal Logo"></a>
         </div>
         <div class="menu-items" id="mobile-menu">
           <li><a href="about.html">About</a></li>
@@ -221,7 +221,7 @@
 
             <div class="column mealtime">
               <h4>Mealtime</h4>
-              <img class="" src="img/wellnus/mealtime-480.jpg">
+              <img class="" src="img/wellnus/mealtime-480.jpg" alt="Mealtime Example">
               <p>This app’s format for displaying in app recipes inspired the design of the search in app recipes page of my app.</p>
             </div>
 
@@ -230,7 +230,7 @@
               <!-- <div class="column mealprepproimage">
               <img src="img/wellnus/mealprep2-480.jpg">
               </div> -->
-              <img class="" src="img/wellnus/mealprep1-480.jpg">
+              <img class="" src="img/wellnus/mealprep1-480.jpg" alt="MealPrepPro Example">
               <p>This app’s general format for displaying a weekly meal plan was the most intuitive from meal plan apps researched and inspired the layout of my design. </p>
 
             </div>
@@ -254,13 +254,13 @@
 
             <div class="column peanut">
               <h4>Peanut</h4>
-              <img class="" src="img/wellnus/peanut-480.jpg">
+              <img class="" src="img/wellnus/peanut-480.jpg" alt="Peanut Example">
               <p>This app connects women who are at a similar stage in life. This was the only social app found to be targeted at helping individuals find support from people with similar life circumstances.</p>
             </div>
 
             <div class="column we3">
               <h4>We3</h4>
-              <img class="" src="img/wellnus/we3-480.jpg">
+              <img class="" src="img/wellnus/we3-480.jpg" alt="we3 Example">
               <p>This app’s format for displaying commonalities between a user and a suggested friend inspired the design of my screen for displaying commonalities between a user and a suggested support buddy.</p>
             </div>
 
@@ -290,16 +290,10 @@
 
           <div class="column">
             <picture class="center">
-              <a href="img/wellnus/jtbd1-flow-480.jpg" target="_blank">
-                <source media="(max-width:480px)" srcset="img/wellnus/jtbd1-flow-480.jpg">
-              </a>
-              <a href="img/wellnus/jtbd1-flow-767.jpg" target="_blank">
-                <source media="(max-width:767px)" srcset="img/wellnus/jtbd1-flow-767.jpg">
-              </a>
-              <a href="img/wellnus/jtbd1-flow-1024.jpg" target="_blank">
-                <source media="(max-width:1024px)" srcset="img/yolo/wellnus/jtbd1-flow-1024.jpg">
-              </a>
-              <a href="img/wellnus/jtbd1-flow-1200.jpg" target="_blank"><img src="img/wellnus/jtbd1-flow-1200.jpg" alt="JTBD1 User Flow"></a>
+                <source media="(max-width:480px)" srcset="img/wellnus/jtbd1-flow-480.jpg"/>
+                <source media="(max-width:767px)" srcset="img/wellnus/jtbd1-flow-767.jpg"/>
+                <source media="(max-width:1024px)" srcset="img/wellnus/jtbd1-flow-1024.jpg"/>
+                <img src="img/wellnus/jtbd1-flow-1200.jpg" class="modal-image center" alt="JTBD1 User Flow"/>
             </picture>
           </div>
         </div>
@@ -311,22 +305,25 @@
           </div>
 
           <div class="column">
-            <picture class="center">
-              <a href="img/wellnus/jtbd2-flow-480.jpg" target="_blank">
-                <source media="(max-width:480px)" srcset="img/wellnus/jtbd2-flow-480.jpg">
-              </a>
-              <a href="img/wellnus/jtbd2-flow-767.jpg" target="_blank">
-                <source media="(max-width:767px)" srcset="img/wellnus/jtbd2-flow-767.jpg">
-              </a>
-              <a href="img/wellnus/jtbd2-flow-1024.jpg" target="_blank">
-                <source media="(max-width:1024px)" srcset="img/yolo/wellnus/jtbd2-flow-1024.jpg">
-              </a>
-              <a href="img/wellnus/jtbd2-flow-1200.jpg" target="_blank"><img src="img/wellnus/jtbd2-flow-1200.jpg" alt="JTBD2 User Flow"></a>
+            <picture class="center" alt="JTBD 1 User Flow">
+                <source media="(max-width:480px)" srcset="img/wellnus/jtbd2-flow-480.jpg"/>
+                <source media="(max-width:767px)" srcset="img/wellnus/jtbd2-flow-767.jpg"/>
+                <source media="(max-width:1024px)" srcset="img/wellnus/jtbd2-flow-1024.jpg"/>
+                <img src="img/wellnus/jtbd2-flow-1200.jpg" class="modal-image center" alt="JTBD2 User Flow"/>
             </picture>
+
+            
           </div>
         </div>
       </div>
 
+    </div>
+
+     <!-- The Modal -->
+     <div id="modal" class="modal">
+      <span id="modal-close" class="modal-close">&times;</span>
+      <img id="modal-content" class="modal-content">
+      <div id="modal-caption" class="modal-caption"></div>
     </div>
 
 
@@ -345,32 +342,32 @@
           <div class="row wireframes-row">
             <div class="column">
               <h4>Family Meal Plan<br>(Low Fidelity)</h4>
-              <img src="img/wellnus/lf-mp-480.jpg">
+              <img src="img/wellnus/lf-mp-480.jpg" alt="Family Meal Plan (Low Fidelity)">
             </div>
 
             <div class="column">
               <h4>Family Meal Plan<br>(Mid Fidelity Android)</h4>
-              <img src="img/wellnus/mf-mp-android-480.jpg">
+              <img src="img/wellnus/mf-mp-android-480.jpg" alt="Family Meal Plan (Mid Fidelity Android)">
             </div>
 
             <div class="column">
               <h4>Family Meal Plan<br>(Mid Fidelity iOS)</h4>
-              <img src="img/wellnus/mf-mp-ios-480.jpg">
+              <img src="img/wellnus/mf-mp-ios-480.jpg" alt="Family Meal Plan (Mid Fidelity iOS)">
             </div>
 
             <div class="column">
               <h4>Connect with Buddy<br>(Low Fidelity)</h4>
-              <img src="img/wellnus/lf-support-480.jpg">
+              <img src="img/wellnus/lf-support-480.jpg" alt="Connect with Buddy (Low Fidelity)">
             </div>
 
             <div class="column">
               <h4>Connect with Buddy<br>(Mid Fidelity Android)</h4>
-              <img src="img/wellnus/mf-support-android-480.jpg">
+              <img src="img/wellnus/mf-support-android-480.jpg" alt="Connect with Buddy (Mid Fidelity Android)">
             </div>
 
             <div class="column">
               <h4>Connect with Buddy<br>(Mid Fidelity iOS)</h4>
-              <img src="img/wellnus/mf-support-ios-480.jpg">
+              <img src="img/wellnus/mf-support-ios-480.jpg" alt="Connect with Buddy (Mid Fidelity iOS)">
             </div>
 
           </div>
@@ -422,12 +419,12 @@
 
               <div class="column meal-plan-v1 first">
                 <h4>Create Meal Plan v1</h4>
-                <img class="center" src="img/wellnus/testing-mp-v1.jpg">
+                <img class="center" src="img/wellnus/testing-mp-v1.jpg" alt="Create Meal Plan v1">
               </div>
 
               <div class="column meal-plan-v2">
                 <h4>Create Meal Plan v2</h4>
-                <img class="center" src="img/wellnus/testing-mp-v2.jpg">
+                <img class="center" src="img/wellnus/testing-mp-v2.jpg" alt="Create Meal Plan v2">
               </div>
             </div>
           </div>
@@ -453,12 +450,12 @@
 
               <div class="column meal-plan-v1 first">
                 <h4>My Network v1</h4>
-                <img src="img/wellnus/testing-network-v1.jpg">
+                <img src="img/wellnus/testing-network-v1.jpg" alt="My Network v1">
               </div>
 
               <div class="column meal-plan-v2">
                 <h4>My Network v2</h4>
-                <img src="img/wellnus/testing-network-v2.jpg">
+                <img src="img/wellnus/testing-network-v2.jpg" alt="My Network v2">
               </div>
 
             </div>
@@ -482,59 +479,59 @@
           <div class="row mockup-row ios">
 
             <div class="column">
-              <img src="img/wellnus/mockup1-480.png">
+              <img src="img/wellnus/mockup1-480.png" alt="iOS Mockup 1">
             </div>
 
             <div class="column">
-              <img src="img/wellnus/mockup2-480.png">
+              <img src="img/wellnus/mockup2-480.png" alt="iOS Mockup 2">
             </div>
 
             <div class="column">
-              <img src="img/wellnus/mockup3-480.png">
+              <img src="img/wellnus/mockup3-480.png" alt="iOS Mockup 3">
             </div>
 
             <div class="column">
-              <img src="img/wellnus/mockup4-480.png">
+              <img src="img/wellnus/mockup4-480.png" alt="iOS Mockup 4">
             </div>
 
             <div class="column">
-              <img src="img/wellnus/mockup5-480.png">
+              <img src="img/wellnus/mockup5-480.png" alt="iOS Mockup 5">
             </div>
 
             <div class="column">
-              <img src="img/wellnus/mockup6-480.png">
+              <img src="img/wellnus/mockup6-480.png" alt="iOS Mockup 6">
             </div>
 
             <div class="column">
-              <img src="img/wellnus/mockup7-480.png">
+              <img src="img/wellnus/mockup7-480.png" alt="iOS Mockup 7">
             </div>
 
             <div class="column">
-              <img src="img/wellnus/mockup8-480.png">
+              <img src="img/wellnus/mockup8-480.png" alt="iOS Mockup 8">
             </div>
 
             <div class="column">
-              <img src="img/wellnus/mockup9-480.png">
+              <img src="img/wellnus/mockup9-480.png" alt="iOS Mockup 9">
             </div>
 
             <div class="column">
-              <img src="img/wellnus/mockup10-480.png">
+              <img src="img/wellnus/mockup10-480.png" alt="iOS Mockup 10">
             </div>
 
             <div class="column">
-              <img src="img/wellnus/mockup11-480.png">
+              <img src="img/wellnus/mockup11-480.png" alt="iOS Mockup 11">
             </div>
 
             <div class="column">
-              <img src="img/wellnus/mockup12-480.png">
+              <img src="img/wellnus/mockup12-480.png" alt="iOS Mockup 12">
             </div>
 
             <div class="column">
-              <img src="img/wellnus/mockup13-480.png">
+              <img src="img/wellnus/mockup13-480.png" alt="iOS Mockup 13">
             </div>
 
             <div class="column">
-              <img src="img/wellnus/mockup14-480.png">
+              <img src="img/wellnus/mockup14-480.png" alt="iOS Mockup 14">
             </div>
 
           </div>
@@ -555,23 +552,23 @@
           <div class="row mockup-row android">
 
             <div class="column">
-              <img src="img/wellnus/android-mockup1-480.png">
+              <img src="img/wellnus/android-mockup1-480.png" alt="Android Mockup 1">
             </div>
 
             <div class="column">
-              <img src="img/wellnus/android-mockup2-480.png">
+              <img src="img/wellnus/android-mockup2-480.png" alt="Android Mockup 2">
             </div>
 
             <div class="column">
-              <img src="img/wellnus/android-mockup3-480.png">
+              <img src="img/wellnus/android-mockup3-480.png" alt="Android Mockup 3">
             </div>
 
             <div class="column">
-              <img src="img/wellnus/android-mockup4-480.png">
+              <img src="img/wellnus/android-mockup4-480.png" alt="Android Mockup 4">
             </div>
 
             <div class="column">
-              <img src="img/wellnus/android-mockup5-480.png">
+              <img src="img/wellnus/android-mockup5-480.png" alt="Android Mockup 5">
             </div>
 
           </div>
@@ -596,7 +593,7 @@
       </div>
     </div>
 
-    <div class="center section case-study">
+    <div class="section case-study">
       <a href="https://www.behance.net/gallery/155789325/WEllnUS" target="_blank" class="button casestudy">View Full Case Study</a>
     </div>
 
@@ -619,7 +616,7 @@
 
     <!--Social Media Layout and Placeholders-->
     <div class="social-media-icons">
-      <a href="https://www.linkedin.com/in/aasiya-fazal-951470a2" target="_blank" class="social-media">
+      <a href="https://www.linkedin.com/in/aasiya-fazal-951470a2" target="_blank" class="social-media" aria-label="Connect with me on LinkedIn">
         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_30_940)">
             <path d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" fill="#D11D70" />
@@ -636,7 +633,7 @@
           </defs>
         </svg>
       </a>
-      <a href="https://www.behance.net/aasiyafazal" target="_blank" class="social-media">
+      <a href="https://www.behance.net/aasiyafazal" target="_blank" class="social-media" aria-label="See my work on Behance">
         <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_15_267)">
             <path d="M25.5 50C39.3071 50 50.5 38.8071 50.5 25C50.5 11.1929 39.3071 0 25.5 0C11.6929 0 0.5 11.1929 0.5 25C0.5 38.8071 11.6929 50 25.5 50Z" fill="#D11D70" />
@@ -653,7 +650,7 @@
       </a>
     </div>
 
-    <p>Copyright Aasiya Fazal 2022</p>
+    <p>Copyright Aasiya Fazal 2023</p>
     
   </footer>
 

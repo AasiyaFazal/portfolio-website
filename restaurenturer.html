@@ -27,7 +27,7 @@
       <div class="desktop-navbar">
         <div class="nav-container">
           <a href="index.html"
-            ><img id="logo" src="img/logo.svg" alt="Aasiya Fazal logo"
+            ><img class="logo" src="img/logo.svg" alt="Aasiya Fazal logo"
           /></a>
           <nav>
             <ul class="navigation">
@@ -47,9 +47,9 @@
             <span class="line line2"></span>
             <span class="line line3"></span>
           </div>
-          <div class="logo">
+          <div class="logo-box">
             <a href="index.html"
-              ><img id="logo" src="img/logo.svg" alt="Aasiya Fazal Logo"
+              ><img class="logo" src="img/logo.svg" alt="Aasiya Fazal Logo"
             /></a>
           </div>
           <div class="menu-items" id="mobile-menu">
@@ -177,7 +177,10 @@
 
             <div class="row mockup-row">
               <div class="column mockup1">
-                <img src="img/restaurenturer/foursquare-1.jpg" alt="Foursquare Example 1"/>
+                <img
+                  src="img/restaurenturer/foursquare-1.jpg"
+                  alt="Foursquare Example 1"
+                />
                 <p>
                   This is the first screen a user sees when they go onto the
                   app. It allows a user to start searching for places straight
@@ -188,7 +191,10 @@
               </div>
 
               <div class="column mockup2">
-                <img src="img/restaurenturer/foursquare-2.jpg" alt="Foursquare Example 2"/>
+                <img
+                  src="img/restaurenturer/foursquare-2.jpg"
+                  alt="Foursquare Example 2"
+                />
                 <p>
                   This screen layout is easy to understand and the information
                   given to users is relevant i.e. ratings, distance. However,
@@ -200,7 +206,10 @@
               </div>
 
               <div class="column mockup2">
-                <img src="img/restaurenturer/foursquare-3.jpg" alt="Foursquare Example 3" />
+                <img
+                  src="img/restaurenturer/foursquare-3.jpg"
+                  alt="Foursquare Example 3"
+                />
                 <p>
                   This is the screen a user sees when they select a place to
                   view more information about. The tabs which provide different
@@ -223,7 +232,10 @@
 
             <div class="row mockup-row">
               <div class="column-v2 mockup2">
-                <img src="img/restaurenturer/opentable-2.jpg" alt="OpenTable Example 1"/>
+                <img
+                  src="img/restaurenturer/opentable-2.jpg"
+                  alt="OpenTable Example 1"
+                />
                 <p>
                   This is the first screen a user sees when they go onto the
                   desktop version of the app. It allows a user to search for
@@ -237,7 +249,10 @@
 
             <div class="row mockup-row phone-screens">
               <div class="column mockup1">
-                <img src="img/restaurenturer/opentable-1.jpg" alt="OpenTable Example 2"/>
+                <img
+                  src="img/restaurenturer/opentable-1.jpg"
+                  alt="OpenTable Example 2"
+                />
                 <p>
                   This is the first screen a user sees when they go onto the
                   mobile app. They can browse through restaurants, see which
@@ -247,7 +262,10 @@
               </div>
 
               <div class="column mockup3">
-                <img src="img/restaurenturer/opentable-3.jpg" alt="OpenTable Example 3"/>
+                <img
+                  src="img/restaurenturer/opentable-3.jpg"
+                  alt="OpenTable Example 3"
+                />
                 <p>
                   The tabs on this screen which separate different types of
                   relevant information about a restaurant were incorporated into
@@ -263,7 +281,7 @@
       <div class="section discovery">
         <div class="inner-section">
           <div class="container">
-            <h2>2. User Research</h2>
+            <h2>User Research</h2>
           </div>
         </div>
 
@@ -372,36 +390,30 @@
       <div class="section user-flow">
         <div class="inner-section">
           <div class="container">
-            <h2>4. User Flow Diagram</h2>
+            <h2>User Flow Diagram</h2>
           </div>
         </div>
 
         <div class="inner-section">
           <div class="container row user-flow">
             <picture alt="User Flow">
-              <a href="img/restaurenturer/user-flow-480.jpg">
-                <source
-                  media="(max-width:480px)"
-                  srcset="img/restaurenturer/user-flow-480.jpg"
-                />
-              </a>
-              <a href="img/restaurenturer/user-flow-767.jpg">
-                <source
-                  media="(max-width:767px)"
-                  srcset="img/restaurenturer/user-flow-767.jpg"
-                />
-              </a>
-              <a href="img/restaurenturer/user-flow-1024.jpg">
-                <source
-                  media="(max-width:1024px)"
-                  srcset="img/restaurenturer/user-flow-1024.jpg"
-                />
-              </a>
-              <a href="img/restaurenturer/user-flow-1920.jpg"
-                ><img
-                  src="img/restaurenturer/user-flow-1920.jpg"
-                  alt="User Flow"
-              /></a>
+              <source
+                media="(max-width:480px)"
+                srcset="img/restaurenturer/user-flow-480.jpg"
+              />
+              <source
+                media="(max-width:767px)"
+                srcset="img/restaurenturer/user-flow-767.jpg"
+              />
+              <source
+                media="(max-width:1024px)"
+                srcset="img/restaurenturer/user-flow-1024.jpg"
+              />
+              <img
+                src="img/restaurenturer/user-flow-1920.jpg"
+                alt="User Flow"
+                class="modal-image"
+              />
             </picture>
           </div>
         </div>
@@ -410,7 +422,7 @@
       <div class="section user-personas">
         <div class="inner-section">
           <div class="container">
-            <h2>3. User Personas</h2>
+            <h2>User Personas</h2>
             <p>
               Based on the insights gathered around user goals and motivations
               during the user research stage, three user personas were created
@@ -425,85 +437,67 @@
           <div class="row mockup-row">
             <div class="column persona">
               <picture alt="Persona 1">
-                <a href="img/restaurenturer/persona1-480.jpg" target="_blank">
-                  <source
-                    media="(max-width:480px)"
-                    srcset="img/restaurenturer/persona1-480.jpg"
-                  />
-                </a>
-                <a href="img/restaurenturer/persona1-767.jpg" target="_blank">
-                  <source
-                    media="(max-width:767px)"
-                    srcset="img/restaurenturer/persona1-767.jpg"
-                  />
-                </a>
-                <a href="img/restaurenturer/persona1-1024.jpg" target="_blank">
-                  <source
-                    media="(max-width:1024px)"
-                    srcset="img/restaurenturer/persona1-1024.jpg"
-                  />
-                </a>
-                <a href="img/restaurenturer/persona1-1920.jpg" target="_blank"
-                  ><img
-                    src="img/restaurenturer/persona1-1920.jpg"
-                    alt="User Persona 1"
-                /></a>
+                <source
+                  media="(max-width:480px)"
+                  srcset="img/restaurenturer/persona1-480.jpg"
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="img/restaurenturer/persona1-767.jpg"
+                />
+                <source
+                  media="(max-width:1024px)"
+                  srcset="img/restaurenturer/persona1-1024.jpg"
+                />
+                <img
+                  src="img/restaurenturer/persona1-1920.jpg"
+                  alt="User Persona 1"
+                  class="modal-image"
+                />
               </picture>
             </div>
 
             <div class="column persona">
               <picture alt="Persona 2">
-                <a href="img/restaurenturer/persona2-480.jpg" target="_blank">
-                  <source
-                    media="(max-width:480px)"
-                    srcset="img/restaurenturer/persona2-480.jpg"
-                  />
-                </a>
-                <a href="img/restaurenturer/persona2-767.jpg" target="_blank">
-                  <source
-                    media="(max-width:767px)"
-                    srcset="img/restaurenturer/persona2-767.jpg"
-                  />
-                </a>
-                <a href="img/restaurenturer/persona2-1024.jpg" target="_blank">
-                  <source
-                    media="(max-width:1024px)"
-                    srcset="img/restaurenturer/persona2-1024.jpg"
-                  />
-                </a>
-                <a href="img/restaurenturer/persona2-1920.jpg" target="_blank"
-                  ><img
-                    src="img/restaurenturer/persona2-1920.jpg"
-                    alt="User Persona 2"
-                /></a>
+                <source
+                  media="(max-width:480px)"
+                  srcset="img/restaurenturer/persona2-480.jpg"
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="img/restaurenturer/persona2-767.jpg"
+                />
+                <source
+                  media="(max-width:1024px)"
+                  srcset="img/restaurenturer/persona2-1024.jpg"
+                />
+                <img
+                  src="img/restaurenturer/persona2-1920.jpg"
+                  alt="User Persona 2"
+                  class="modal-image"
+                />
               </picture>
             </div>
 
             <div class="column persona">
               <picture alt="Persona 3">
-                <a href="img/restaurenturer/persona3-480.jpg" target="_blank">
-                  <source
-                    media="(max-width:480px)"
-                    srcset="img/restaurenturer/persona3-480.jpg"
-                  />
-                </a>
-                <a href="img/restaurenturer/persona3-767.jpg" target="_blank">
-                  <source
-                    media="(max-width:767px)"
-                    srcset="img/restaurenturer/persona3-767.jpg"
-                  />
-                </a>
-                <a href="img/restaurenturer/persona3-1024.jpg" target="_blank">
-                  <source
-                    media="(max-width:1024px)"
-                    srcset="img/restaurenturer/persona3-1024.jpg"
-                  />
-                </a>
-                <a href="img/restaurenturer/persona3-1920.jpg" target="_blank"
-                  ><img
-                    src="img/restaurenturer/persona3-1920.jpg"
-                    alt="User Persona 3"
-                /></a>
+                <source
+                  media="(max-width:480px)"
+                  srcset="img/restaurenturer/persona3-480.jpg"
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="img/restaurenturer/persona3-767.jpg"
+                />
+                <source
+                  media="(max-width:1024px)"
+                  srcset="img/restaurenturer/persona3-1024.jpg"
+                />
+                <img
+                  src="img/restaurenturer/persona3-1920.jpg"
+                  alt="User Persona 3"
+                  class="modal-image"
+                />
               </picture>
             </div>
           </div>
@@ -513,10 +507,17 @@
         </div>
       </div>
 
+      <!-- The Modal -->
+      <div id="modal" class="modal">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <img id="modal-content" class="modal-content" />
+        <div id="modal-caption" class="modal-caption"></div>
+      </div>
+
       <div class="section wireframes">
         <div class="inner-section">
           <div class="container">
-            <h2>5. Low and Mid Fidelity Wireframes</h2>
+            <h2>Low and Mid Fidelity Wireframes</h2>
             <p>
               A prototype using low fidelity sketches was created using InVision
               and tested on 4 users. The feedback gained at this stage was used
@@ -531,32 +532,50 @@
             <div class="row wireframes-row">
               <div class="column">
                 <h3>Restaurant Search<br />(Low Fidelity)</h3>
-                <img src="img/restaurenturer/lf-home.jpg" alt="Home (Low Fidelity)"/>
+                <img
+                  src="img/restaurenturer/lf-home.jpg"
+                  alt="Home (Low Fidelity)"
+                />
               </div>
 
               <div class="column">
                 <h3>Restaurant Search<br />(Mid Fidelity)</h3>
-                <img src="img/restaurenturer/mf-home.jpg" alt="Home (Mid Fidelity)"/>
+                <img
+                  src="img/restaurenturer/mf-home.jpg"
+                  alt="Home (Mid Fidelity)"
+                />
               </div>
 
               <div class="column">
                 <h3>Restaurant Info<br />(Low Fidelity)</h3>
-                <img src="img/restaurenturer/lf-restaurant.jpg" alt="Restaurant Info (Low Fidelity)"/>
+                <img
+                  src="img/restaurenturer/lf-restaurant.jpg"
+                  alt="Restaurant Info (Low Fidelity)"
+                />
               </div>
 
               <div class="column">
                 <h3>Restaurant Info<br />(Mid Fidelity)</h3>
-                <img src="img/restaurenturer/mf-restaurant.jpg" alt="Restaurant Info (Mid Fidelity)"/>
+                <img
+                  src="img/restaurenturer/mf-restaurant.jpg"
+                  alt="Restaurant Info (Mid Fidelity)"
+                />
               </div>
 
               <div class="column">
                 <h3>Save Restaurant<br />(Low Fidelity)</h3>
-                <img src="img/restaurenturer/lf-save.jpg" alt="Save Restaurant (Low Fidelity)"/>
+                <img
+                  src="img/restaurenturer/lf-save.jpg"
+                  alt="Save Restaurant (Low Fidelity)"
+                />
               </div>
 
               <div class="column">
                 <h3>Save Restaurant<br />(Mid Fidelity)</h3>
-                <img src="img/restaurenturer/mf-save.jpg" alt="Save Restaurant (Mid Fidelity)"/>
+                <img
+                  src="img/restaurenturer/mf-save.jpg"
+                  alt="Save Restaurant (Mid Fidelity)"
+                />
               </div>
             </div>
           </div>
@@ -595,39 +614,39 @@
           <div class="container iphone-mockups">
             <div class="row mockup-row iphone">
               <div class="column">
-                <img src="img/restaurenturer/mockup-1.png" alt="Mockup 1"/>
+                <img src="img/restaurenturer/mockup-1.png" alt="Mockup 1" />
               </div>
 
               <div class="column">
-                <img src="img/restaurenturer/mockup-2.png" alt="Mockup 2"/>
+                <img src="img/restaurenturer/mockup-2.png" alt="Mockup 2" />
               </div>
 
               <div class="column">
-                <img src="img/restaurenturer/mockup-3.png" alt="Mockup 3"/>
+                <img src="img/restaurenturer/mockup-3.png" alt="Mockup 3" />
               </div>
 
               <div class="column">
-                <img src="img/restaurenturer/mockup-4.png" alt="Mockup 4"/>
+                <img src="img/restaurenturer/mockup-4.png" alt="Mockup 4" />
               </div>
 
               <div class="column">
-                <img src="img/restaurenturer/mockup-5.png" alt="Mockup 5"/>
+                <img src="img/restaurenturer/mockup-5.png" alt="Mockup 5" />
               </div>
 
               <div class="column">
-                <img src="img/restaurenturer/mockup-6.png" alt="Mockup 6"/>
+                <img src="img/restaurenturer/mockup-6.png" alt="Mockup 6" />
               </div>
 
               <div class="column">
-                <img src="img/restaurenturer/mockup-7.png" alt="Mockup 7"/>
+                <img src="img/restaurenturer/mockup-7.png" alt="Mockup 7" />
               </div>
 
               <div class="column">
-                <img src="img/restaurenturer/mockup-8.png" alt="Mockup 8"/>
+                <img src="img/restaurenturer/mockup-8.png" alt="Mockup 8" />
               </div>
 
               <div class="column">
-                <img src="img/restaurenturer/mockup-9.png" alt="Mockup 9"/>
+                <img src="img/restaurenturer/mockup-9.png" alt="Mockup 9" />
               </div>
             </div>
           </div>
@@ -657,7 +676,7 @@
         </div>
       </div>
 
-      <div class="center section case-study">
+      <div class="section case-study">
         <a
           href="https://www.behance.net/gallery/155788841/Restaurenturer"
           target="_blank"
@@ -690,6 +709,7 @@
           href="https://www.linkedin.com/in/aasiya-fazal-951470a2"
           target="_blank"
           class="social-media"
+          aria-label="Connect with me on LinkedIn"
         >
           <svg
             width="50"
@@ -727,6 +747,7 @@
           href="https://www.behance.net/aasiyafazal"
           target="_blank"
           class="social-media"
+          aria-label="See my work on Behance"
         >
           <svg
             width="51"
@@ -759,7 +780,7 @@
         </a>
       </div>
 
-      <p>Copyright Aasiya Fazal 2022</p>
+      <p>Copyright Aasiya Fazal 2023</p>
     </footer>
 
     <!--Javascript code-->

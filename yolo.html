@@ -27,7 +27,7 @@
       <div class="desktop-navbar">
         <div class="nav-container">
           <a href="index.html"
-            ><img id="logo" src="img/logo.svg" alt="Aasiya Fazal Logo"
+            ><img class="logo" src="img/logo.svg" alt="Aasiya Fazal Logo"
           /></a>
           <nav>
             <ul class="navigation">
@@ -47,9 +47,9 @@
             <span class="line line2"></span>
             <span class="line line3"></span>
           </div>
-          <div class="logo">
+          <div class="logo-box">
             <a href="index.html"
-              ><img id="logo" src="img/logo.svg" alt="Aasiya Fazal Logo"
+              ><img class="logo" src="img/logo.svg" alt="Aasiya Fazal Logo"
             /></a>
           </div>
           <div class="menu-items" id="mobile-menu">
@@ -144,31 +144,34 @@
 
         <div class="inner-section">
           <div class="row">
-            <picture>
-              <a href="img/yolo/1920-user-flow.jpg">
-                <source
-                  media="(max-width:480px)"
-                  srcset="img/yolo/480-user-flow.jpg"
-                />
-              </a>
-              <a href="img/yolo/1920-user-flow.jpg">
-                <source
-                  media="(max-width:767px)"
-                  srcset="img/yolo/767-user-flow.jpg"
-                />
-              </a>
-              <a href="img/yolo/1920-user-flow.jpg">
-                <source
-                  media="(max-width:1024px)"
-                  srcset="img/yolo/1024-user-flow.jpg"
-                />
-              </a>
-              <a href="img/yolo/1920-user-flow.jpg"
-                ><img src="img/yolo/1920-user-flow.jpg" alt="YOLO User Flow"
-              /></a>
+            <picture class="modal-image">
+              <source
+                media="(max-width:480px)"
+                srcset="img/yolo/480-user-flow.jpg"
+              />
+              <source
+                media="(max-width:767px)"
+                srcset="img/yolo/767-user-flow.jpg"
+              />
+              <source
+                media="(max-width:1024px)"
+                srcset="img/yolo/1024-user-flow.jpg"
+              />
+              <img
+                src="img/yolo/1920-user-flow.jpg"
+                class="modal-image"
+                alt="YOLO User Flow"
+              />
             </picture>
           </div>
         </div>
+      </div>
+
+      <!-- The Modal -->
+      <div id="modal" class="modal">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <img id="modal-content" class="modal-content" />
+        <div id="modal-caption" class="modal-caption"></div>
       </div>
 
       <div class="section wireframes">
@@ -188,7 +191,10 @@
             <div class="row wireframes-row">
               <div class="column">
                 <h4>Main Homepage <br />(Low Fidelity)</h4>
-                <img src="img/yolo/main-lf.jpg" alt="Main Homepage (Low Fidelity Wireframe)"/>
+                <img
+                  src="img/yolo/main-lf.jpg"
+                  alt="Main Homepage (Low Fidelity Wireframe)"
+                />
               </div>
 
               <div class="column">
@@ -196,7 +202,10 @@
                   Main Homepage <br />
                   (Mid Fidelity v1)
                 </h4>
-                <img src="img/yolo/main-mf-v1.jpg" alt="Main Homepage (Mid Fidelity Wireframe v1)"/>
+                <img
+                  src="img/yolo/main-mf-v1.jpg"
+                  alt="Main Homepage (Mid Fidelity Wireframe v1)"
+                />
               </div>
 
               <div class="column">
@@ -204,7 +213,10 @@
                   Main Homepage <br />
                   (Mid Fidelity v2)
                 </h4>
-                <img src="img/yolo/main-mf-v2.jpg" alt="Main Homepage (Mid Fidelity Wireframe v2)"/>
+                <img
+                  src="img/yolo/main-mf-v2.jpg"
+                  alt="Main Homepage (Mid Fidelity Wireframe v2)"
+                />
               </div>
 
               <div class="column">
@@ -212,7 +224,10 @@
                   Main Homepage <br />
                   (Mid Fidelity Final)
                 </h4>
-                <img src="img/yolo/main-mf-final.jpg" alt="Main Homepage (Mid Fidelity Wireframe Final)" />
+                <img
+                  src="img/yolo/main-mf-final.jpg"
+                  alt="Main Homepage (Mid Fidelity Wireframe Final)"
+                />
               </div>
             </div>
 
@@ -380,38 +395,56 @@
           <div class="container">
             <div class="row mockup-row">
               <div class="column">
-                <img src="img/yolo/hf-home.png" alt="Homepage (High Fidelity)"/>
+                <img
+                  src="img/yolo/hf-home.png"
+                  alt="Homepage (High Fidelity)"
+                />
               </div>
 
               <div class="column">
-                <img src="img/yolo/hf-experience.png" alt="Experience (High Fidelity)" />
+                <img
+                  src="img/yolo/hf-experience.png"
+                  alt="Experience (High Fidelity)"
+                />
               </div>
 
               <div class="column">
-                <img src="img/yolo/hf-choose-datetime.png" alt="Choose Date-time (High Fidelity)" />
+                <img
+                  src="img/yolo/hf-choose-datetime.png"
+                  alt="Choose Date-time (High Fidelity)"
+                />
               </div>
 
               <div class="column">
-                <img src="img/yolo/hf-cart.png" alt="Add to Cart (High Fidelity)"/>
+                <img
+                  src="img/yolo/hf-cart.png"
+                  alt="Add to Cart (High Fidelity)"
+                />
               </div>
 
               <div class="column">
-                <img src="img/yolo/hf-login.png" alt="Login (High Fidelity)"/>
+                <img src="img/yolo/hf-login.png" alt="Login (High Fidelity)" />
               </div>
 
               <div class="column">
-                <img src="img/yolo/hf-review.png" alt="Review (High Fidelity)"/>
+                <img
+                  src="img/yolo/hf-review.png"
+                  alt="Review (High Fidelity)"
+                />
               </div>
 
               <div class="column">
-                <img src="img/yolo/hf-success.png" alt="Successful Order Placed (High Fidelity)" />
+                <img
+                  src="img/yolo/hf-success.png"
+                  alt="Successful Order Placed (High Fidelity)"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="center">
+      <div class="section case-study">
         <a
           href="https://www.behance.net/gallery/155605473/YOLO"
           target="_blank"
@@ -444,6 +477,7 @@
           href="https://www.linkedin.com/in/aasiya-fazal-951470a2"
           target="_blank"
           class="social-media"
+          aria-label="Connect with me on LinkedIn"
         >
           <svg
             width="50"
@@ -481,6 +515,7 @@
           href="https://www.behance.net/aasiyafazal"
           target="_blank"
           class="social-media"
+          aria-label="See my work on Behance"
         >
           <svg
             width="51"
@@ -513,7 +548,7 @@
         </a>
       </div>
 
-      <p>Copyright Aasiya Fazal 2022</p>
+      <p>Copyright Aasiya Fazal 2023</p>
     </footer>
 
     <!--Javascript code-->

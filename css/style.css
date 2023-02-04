@@ -129,7 +129,7 @@ picture {
   line-height: 0;
 }
 
-#logo {
+.logo {
   width: 80px;
   position: absolute;
   top: 10px;
@@ -190,14 +190,14 @@ img {
 } */
 /* Navbar styling */
 a {
-  color: #9b9785;
+  color: #8e144c;
   text-decoration: none;
   font-weight: 600;
 }
 
 a:visited {
   /* visited link */
-  color: #9b9785;
+  color: #8e144c;
   text-decoration: none;
 }
 
@@ -224,7 +224,7 @@ a.contact-link:hover {
 }
 
 a.contact-link:visited {
-  color: #9b9785 !important;
+  color: #8e144c !important;
 }
 
 nav > ul {
@@ -240,7 +240,9 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 7px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .mobile-navbar {
@@ -311,7 +313,7 @@ nav > ul > li > a {
   height: 4px;
   width: 100%;
   border-radius: 1px;
-  background: #9b9785;
+  background: #8e144c;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -329,7 +331,7 @@ nav > ul > li > a {
 }
 
 .mobile-navbar .menu-items li {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
 }
 
@@ -349,7 +351,7 @@ nav > ul > li > a {
   transform: rotate(-45deg);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .logo {
+.nav-container input[type="checkbox"]:checked ~ .logo-box {
   display: none;
 }
 
@@ -417,7 +419,7 @@ nav > ul > li > a {
 
 .seeallworkbutton {
   margin-top: -10px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .center .button {
@@ -436,6 +438,12 @@ Navbar styling for Medium devices (640px and larger)
 
   .mobile-navbar {
     display: none;
+  }
+
+  #hero {
+    background-image: url("../img/home/get-in-touch-background-767.jpg");
+    opacity: 0.7;
+    background-size: cover;
   }
 }
 
@@ -559,12 +567,14 @@ h2 {
 }
 
 .cv {
+  margin-top: 20px;
   padding-top: 0;
-  padding-bottom: 5px;
+  padding-bottom: 40px;
 }
 
-.pictureandimage .row-about .column-about-text p {
-  margin-bottom: 15px;
+.hobbies {
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 /* ==============================
@@ -612,7 +622,6 @@ About Me Styling for Large devices (1024px or larger)
   .row-about {
     display: flex;
     justify-content: space-between;
-    padding: auto 30px;
   }
 
   .pictureandimage .row-about {
@@ -640,10 +649,6 @@ About Me Styling for Large devices (1024px or larger)
 
   .pictureandimage .row-about .column-about-text p {
     margin-bottom: 12px;
-  }
-
-  .row-about {
-    padding-bottom: 50px;
   }
 
   .informal {
@@ -735,6 +740,10 @@ About Me Styling for X-large devices (1440px or larger)
 .project p {
   padding: 0px;
   margin: 0px;
+}
+
+.work .row-l {
+  padding-bottom: 20px;
 }
 
 .project {
@@ -927,13 +936,22 @@ About Me Styling for X-large devices (1440px or larger)
 
 .yolo .mockup-row {
   padding-top: 10px;
-  padding-bottom: 0px;
+  padding-bottom: 20px;
 }
 
 .mockup-row .column {
   min-width: 200px;
   max-width: 200px;
   margin-right: 15px;
+}
+
+.case-study {
+  text-align: center;
+}
+
+.casestudy {
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 /* YOLO Medium devices (640px and larger) styling */
@@ -951,10 +969,6 @@ About Me Styling for X-large devices (1440px or larger)
 
   .yolo .inner-section h2 {
     font-size: 18px;
-  }
-
-  .yolo .button {
-    margin: 30px 0;
   }
 
   .colour {
@@ -1013,7 +1027,6 @@ About Me Styling for X-large devices (1440px or larger)
     overflow: hidden;
   }
 
-
   .wireframes-row .column {
     min-width: 200px;
     max-width: 200px;
@@ -1028,6 +1041,11 @@ About Me Styling for X-large devices (1440px or larger)
     min-width: 180px;
     max-width: 180px;
     margin-right: 15px;
+  }
+
+  .casestudy {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1129,10 +1147,6 @@ YOLO styling for X-large devices (1200px or larger)
     margin-left: auto;
     margin-right: auto;
   }
-
-  .yolo .casestudy {
-    margin: 50px 0;
-  }
 }
 
 /* WEllnUS standard specific styling */
@@ -1149,7 +1163,7 @@ YOLO styling for X-large devices (1200px or larger)
   font-weight: 700;
   font-family: "Inter";
   font-size: 17px;
-  color: rgba(11, 99, 246, 0.8);
+  color: #9f0a9c;
   text-align: left;
 }
 
@@ -1255,13 +1269,13 @@ YOLO styling for X-large devices (1200px or larger)
 }
 
 .user-flow .jtbd1 .column {
-  min-width: 30%;
-  max-width: 30%;
+  min-width: 35%;
+  max-width: 35%;
 }
 
 .user-flow .jtbd2 .column {
-  min-width: 18%;
-  max-width: 18%;
+  min-width: 33%;
+  max-width: 33%;
 }
 
 .user-flow .jtbds .column {
@@ -1343,10 +1357,6 @@ YOLO styling for X-large devices (1200px or larger)
   margin-top: 0px;
 }
 
-.wellnus .case-study .button {
-  margin: 30px auto;
-}
-
 .wellnus .mockups .inner-section-mockups .container {
   padding-right: 0;
 }
@@ -1366,8 +1376,13 @@ YOLO styling for X-large devices (1200px or larger)
 }
 
 .ios-mockups .inner-section-mockups {
-  background-image: url("../img/wellnus/mockup-background-480.jpg");
-  background-size: cover;
+  /* background-image: url("../img/wellnus/mockup-background-480.jpg"); */
+  background: rgb(241, 196, 15);
+  background: linear-gradient(
+    180deg,
+    rgba(241, 196, 15, 1) 50%,
+    rgba(150, 143, 133, 1) 50%
+  );
 }
 
 .android-mockups .inner-section-mockups {
@@ -1408,6 +1423,10 @@ YOLO styling for X-large devices (1200px or larger)
   text-decoration: underline;
 }
 
+.wellnus .casestudy {
+  margin-top: 50px;
+}
+
 /* WEllnUS Medium devices (640px and larger) styling */
 @media only screen and (min-width: 640px) {
   .wellnus .inner-section h2 {
@@ -1443,13 +1462,13 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .user-flow .jtbd1 .column {
-    min-width: 30%;
-    max-width: 30%;
+    min-width: 37%;
+    max-width: 37%;
   }
 
   .user-flow .jtbd2 .column {
-    min-width: 18%;
-    max-width: 18%;
+    min-width: 23%;
+    max-width: 23%;
   }
 
   .user-flow .jtbds .column {
@@ -1576,8 +1595,12 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .ios-mockups .inner-section-mockups {
-    background-image: url("../img/wellnus/mockup-background-767.jpg");
-    background-size: contain;
+    background: rgb(241, 196, 15);
+    background: linear-gradient(
+      180deg,
+      rgba(241, 196, 15, 1) 50%,
+      rgba(150, 143, 133, 1) 50%
+    );
   }
 
   .android-mockups .inner-section-mockups {
@@ -1754,10 +1777,10 @@ YOLO styling for X-large devices (1200px or larger)
   font-weight: 700;
   font-family: "Open Sans";
   font-size: 24px;
-  padding: 20px 0px;
-  color: #c1b59c;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  color: #50778a;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .restaurenturer h3 {
@@ -1928,6 +1951,9 @@ YOLO styling for X-large devices (1200px or larger)
   min-width: 288px;
 }
 
+.restaurenturer .wireframes-row {
+  padding-bottom: 30px;
+}
 .restaurenturer .wireframes-row .column {
   margin-right: 20px;
   margin-top: 10px;
@@ -1959,10 +1985,6 @@ YOLO styling for X-large devices (1200px or larger)
   display: none;
 }
 
-.restaurenturer .case-study {
-  margin-top: 10px;
-}
-
 .mockup-row .column:last-child {
   margin-right: 0;
 }
@@ -1980,6 +2002,10 @@ YOLO styling for X-large devices (1200px or larger)
   margin-right: 16px;
 }
 
+.restaurenturer .casestudy {
+  margin-top: 50px;
+}
+
 /* Restaurenturer Medium devices (640px and larger) styling */
 @media only screen and (min-width: 640px) {
   .restaurenturer .user-row {
@@ -1995,7 +2021,6 @@ YOLO styling for X-large devices (1200px or larger)
 
   .restaurenturer .inner-section h2 {
     font-size: 24px;
-    padding: 30px 0px;
   }
 
   .restaurenturer h3 {
@@ -2161,7 +2186,6 @@ YOLO styling for X-large devices (1200px or larger)
 
   .restaurenturer .inner-section h2 {
     font-size: 30px;
-    padding: 30px 0px;
   }
 
   .restaurenturer h3 {
@@ -2295,6 +2319,10 @@ YOLO styling for X-large devices (1200px or larger)
     padding-bottom: 30px;
   }
 
+  .restaurenturer .wireframes h2 {
+    padding-top: 60px;
+  }
+
   .restaurenturer .inner-section-mockups .iphone-mockups {
     background-image: url("../img/restaurenturer/iphone-mockup-background-1024.jpg");
     background-size: cover;
@@ -2316,7 +2344,6 @@ YOLO styling for X-large devices (1200px or larger)
 
   .restaurenturer .inner-section h2 {
     font-size: 34px;
-    padding: 30px 0px;
   }
 
   .restaurenturer h3 {
@@ -2333,7 +2360,7 @@ YOLO styling for X-large devices (1200px or larger)
   }
 
   .restaurenturer .style-guide {
-    background-image: url("../img/restaurenturer/style-guide-background-1200.jpg");
+    background-image: url("../img/restaurenturer/style-guide-background-1920.jpg");
     background-size: cover;
     padding-bottom: 30px;
   }
@@ -2471,8 +2498,8 @@ YOLO styling for X-large devices (1200px or larger)
   margin-right: 16px;
 }
 
-.tickeveryday .case-study .button {
-  margin-top: 20px;
+.tickeveryday .casestudy {
+  margin-top: 50px;
 }
 
 /* tickeveryday Medium devices (640px and larger) styling */
@@ -2804,6 +2831,12 @@ General Layout Styling for Large devices (1024px or larger)
     margin-right: auto;
   }
 
+  #hero {
+    background-image: url("../img/home/get-in-touch-background-1024.jpg");
+    opacity: 0.7;
+    background-size: cover;
+  }
+
   #hero span {
     font-size: 26px;
   }
@@ -2873,6 +2906,12 @@ General Layout Styling for X-large devices (1440px or larger)
     margin-right: auto;
   }
 
+  #hero {
+    background-image: url("../img/home/get-in-touch-background-1920.jpg");
+    opacity: 0.7;
+    background-size: cover;
+  }
+
   /* header {
       max-width: 1200px;
       justify-content: center;
@@ -2896,4 +2935,95 @@ General Layout Styling for X-large devices (1440px or larger)
     margin: 0;
     padding-bottom: 30px;
   }
+}
+
+.modal-image {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-image:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 60px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  opacity: 1 !important;
+  max-width: 1200px;
+}
+
+/* Caption of Modal Image */
+.modal-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 32px;
+}
+
+/* Add Animation */
+.modal-content,
+.modal-caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-atransform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }

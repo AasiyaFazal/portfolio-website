@@ -161,7 +161,7 @@ img {
   /* width of the border, type, color */
   /* transition: 0.2s opacity; */
   text-decoration: none;
-  max-width: 250px;
+  min-width: 200px;
   transition-duration: 0.2s;
   transition-property: opacity;
 }

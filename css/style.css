@@ -19,7 +19,13 @@ header {
   padding-top: 15px;
   z-index: 9;
   padding: 0px 0 4px;
-  height: 90px;
+  /* height: 90px; */
+}
+
+@media (max-width: 639px) {
+  header {
+    height: 90px;
+  }
 }
 
 .header-home {
@@ -28,6 +34,8 @@ header {
 
 .active-bg {
   background-color: #e4ccea;
+  /* box-shadow: 0 1px 4px rgb(146 161 176 / 15%); */
+
   /* background-color: #dedaf4; */
   /* background-color: #d9b0e7;  */
   /* background-color: #d1cceb; */
@@ -92,7 +100,6 @@ h1 {
   margin: 20px auto;
 }
 
-
 .home h1 {
   margin-top: 0px;
 }
@@ -130,11 +137,13 @@ picture {
   line-height: 0;
 }
 
-.logo {
-  width: 80px;
-  position: absolute;
-  top: 25px;
-  left: 20px;
+@media (max-width: 639px) {
+  .logo {
+    width: 90px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+  }
 }
 
 .center {
@@ -248,7 +257,6 @@ nav > ul > li > a {
 
 .mobile-navbar {
   width: 100%;
-  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
 }
 
 /* .nav-container {
@@ -275,13 +283,6 @@ nav > ul > li > a {
 
 .mobile-navbar .nav-container li {
   list-style: none;
-}
-
-.nav-container {
-  display: flex;
-  position: relative;
-  height: 60px;
-  justify-content: center;
 }
 
 .nav-container .checkbox {
@@ -332,8 +333,13 @@ nav > ul > li > a {
 }
 
 .mobile-navbar .menu-items li {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   font-size: 1.5rem;
+}
+
+.mobile-navbar .menu-items a {
+  padding: 0.5rem;
+  display: block;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -382,13 +388,14 @@ nav > ul > li > a {
     padding-bottom: 50px;
   }
 
-  .logo {
-    top: 10px;
+  .desktop-navbar a:first-child {
+    display: inline-flex;
+    max-width: 90px;
   }
 
-  header {
+  /* header {
     height: 60px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1024px) {
@@ -458,9 +465,11 @@ Navbar styling for Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   .desktop-navbar {
-    display: inline-block;
-    width: 100%;
-    margin: 0;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
   }
 
   .mobile-navbar {
@@ -2805,12 +2814,6 @@ General Layout Styling for Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: center;
-  }
-
-  nav > ul {
-    top: 15px;
-    position: absolute;
-    right: 15px;
   }
 
   .about main {
